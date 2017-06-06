@@ -1,0 +1,175 @@
+{
+  "resourceType": "Conformance",
+  "text": {
+    "status": "generated",
+    "div": "<div>Generated Conformance Statement</div>"
+  },
+  "url": "http://localhost:3000/metadata",
+  "name": "Juxly Conformance Statement",
+  "status": "draft",
+  "publisher": "Juxly",
+  "date": "2017-02-28",
+  "description": "Describes capabilities of this server",
+  "kind": "instance",
+  "fhirVersion": "1.0.2",
+  "acceptUnknown": "no",
+  "format": [
+    "json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "All the functionality defined in FHIR",
+      "security": {
+        "cors": true,
+        "extension":  [{
+          "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris",
+          "extension": [{
+            "url": "authorize",
+            "valueUri": "http://localhost:3000/api/oauth/authorize"
+          }, {
+            "url": "token",
+            "valueUri": "http://localhost:3000/api/oauth/token"
+          }]
+        }]
+      },
+      "resource": [
+        {
+          "type": "Condition",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "token",
+              "documentation": "A single or comma separated list of Condition ids. It is a required field if patient field is not given"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "The patient who has the condition. It is a required field if _id field is not given"
+            },
+            {
+              "name": "clinicalstatus",
+              "type": "token",
+              "documentation": "A list of desired clinical statuses of the condition"
+            },
+            {
+              "name": "category",
+              "type": "token",
+              "documentation": "The category of the condition"
+            }
+          ]
+        },
+        {
+          "type": "Encounter",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "The patient present at the encounter. It is a required field if _id field is not given"
+            },
+            {
+              "name": "_id",
+              "type": "token",
+              "documentation": "A single or comma separated list of Encounter ids. It is a required field if patient field is not given"
+            }
+          ]
+        },
+        {
+          "type": "Observation",
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "The subject that the observation is about (if patient). It is a required field if the subject field is not given"
+            },
+            {
+              "name": "subject",
+              "type": "reference",
+              "documentation": "The subject that the observation is about. It is a required field if the patient field is not given"
+            },
+            {
+              "name": "code",
+              "type": "token",
+              "documentation": "One or more observation types separated by commas."
+            },
+            {
+              "name": "date",
+              "type": "date",
+              "documentation": "The date range into which the observation falls. This parameter value should be present twice, prefixed once by 'gt' representing the earliest date and once by 'lt' representing the latest date"
+            },
+            {
+              "name": "_count",
+              "type": "number",
+              "documentation": "The maximum number of results to return in a page."
+            }
+          ]
+        },
+        {
+          "type": "Patient",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "type": "token",
+              "documentation": "A single or comma separated list of Patient ids. Either the '_id' parameter or 'identifier' parameter or any of combination of 'name', 'birthdate' and 'telecom' parameters must be set."
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "A patient identifier. Either the '_id' parameter or 'identifier' parameter or any of combination of 'name', 'birthdate' and 'telecom' parameters must be set."
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "documentation": "A portion of either family or given name of the patient. Either the '_id' parameter or 'identifier' parameter or any of combination of 'name', 'birthdate' and 'telecom' parameters must be set."
+            },
+            {
+              "name": "birthdate",
+              "type": "date",
+              "documentation": "The patient's date of birth. Either the '_id' parameter or 'identifier' parameter or any of combination of 'name', 'birthdate' and 'telecom' parameters must be set."
+            },
+            {
+              "name": "telecom",
+              "type": "token",
+              "documentation": "The value in any kind of telecom details of the patient. Either the '_id' parameter or 'identifier' parameter or any of combination of 'name', 'birthdate' and 'telecom' parameters must be set."
+            },
+            {
+              "name": "_count",
+              "type": "number",
+              "documentation": "The maximum number of results to return. Not honoured when '_id' or 'identifier' are set."
+            }
+          ]
+        }
+      ],
+      "operation": []
+    }
+  ]
+}

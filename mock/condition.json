@@ -1,0 +1,386 @@
+{
+ "resourceType": "Bundle",
+ "id": "6c9a6d23-89e7-4677-962c-7291e31b149a",
+ "type": "searchset",
+ "total": 8,
+ "link": [
+  {
+   "relation": "self",
+   "url": "http://localhost:3000/api/Condition?patient=5566778899"
+  }
+ ],
+ "entry": [
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/d36634557",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "d36634557",
+    "meta": {
+     "versionId": "36634557",
+     "lastUpdated": "2017-05-18T21:54:12.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Diagnosis</b>: Abdominal aortic aneurysm, without rupture, Abdominal aortic aneurysm, without rupture</p><p><b>Clinical Status</b>: active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2017-05-18T05:00:00.000Z</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "encounter": {
+     "reference": "Encounter/123456789"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2017-05-18",
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "I71.4",
+       "display": "Abdominal aortic aneurysm, without rupture",
+       "userSelected": false
+      }
+     ],
+     "text": "Abdominal aortic aneurysm, without rupture"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "2017-05-18T05:00:00.000Z"
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/p6917903",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "p6917903",
+    "meta": {
+     "versionId": "6917903",
+     "lastUpdated": "2017-05-18T21:56:33.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Problem</b>: Morbid (severe) obesity due to excess calories, Morbid (severe) obesity due to excess calories</p><p><b>Clinical Status</b>: Active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 1978</p><p><b>Resolved</b>: false</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2017-05-18",
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "E66.01",
+       "display": "Morbid (severe) obesity due to excess calories",
+       "userSelected": false
+      }
+     ],
+     "text": "Morbid (severe) obesity due to excess calories"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://argonaut.hl7.org",
+       "code": "problem",
+       "display": "Problem"
+      }
+     ],
+     "text": "Problem"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "1978",
+    "abatementBoolean": false
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/p6745861",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "p6745861",
+    "meta": {
+     "versionId": "6901865",
+     "lastUpdated": "2017-05-03T21:40:54.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Problem</b>: Back abrasion, Abrasion, back (disorder)</p><p><b>Verification Status</b>: Entered In Error</p><p><b>Resolved</b>: false</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2016-10-12",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "211042000",
+       "display": "Abrasion, back (disorder)",
+       "userSelected": false
+      }
+     ],
+     "text": "Back abrasion"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://argonaut.hl7.org",
+       "code": "problem",
+       "display": "Problem"
+      }
+     ],
+     "text": "Problem"
+    },
+    "verificationStatus": "entered-in-error",
+    "abatementBoolean": false
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/p6946417",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "p6946417",
+    "meta": {
+     "versionId": "6946431",
+     "lastUpdated": "2017-06-05T18:33:24.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Problem</b>: Rheumatoid lung disease with rheumatoid arthritis of left knee, Rheumatoid lung disease with rheumatoid arthritis of left knee</p><p><b>Clinical Status</b>: Active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2017-06-05</p><p><b>Resolved</b>: false</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/4464007",
+     "display": "Portal, Portal"
+    },
+    "dateRecorded": "2017-06-05",
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "M05.162",
+       "display": "Rheumatoid lung disease with rheumatoid arthritis of left knee",
+       "userSelected": false
+      }
+     ],
+     "text": "Rheumatoid lung disease with rheumatoid arthritis of left knee"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://argonaut.hl7.org",
+       "code": "problem",
+       "display": "Problem"
+      }
+     ],
+     "text": "Problem"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "2017-06-05",
+    "abatementBoolean": false
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/d36658603",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "d36658603",
+    "meta": {
+     "versionId": "36658603",
+     "lastUpdated": "2017-06-05T18:14:45.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Diagnosis</b>: Rheumatoid lung disease with rheumatoid arthritis of left knee, Rheumatoid lung disease with rheumatoid arthritis of left knee</p><p><b>Clinical Status</b>: active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2017-06-05T18:14:45.000Z</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "encounter": {
+     "reference": "Encounter/123456789"
+    },
+    "asserter": {
+     "reference": "Practitioner/4464007",
+     "display": "Portal, Portal"
+    },
+    "dateRecorded": "2017-06-05",
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "M05.162",
+       "display": "Rheumatoid lung disease with rheumatoid arthritis of left knee",
+       "userSelected": false
+      }
+     ],
+     "text": "Rheumatoid lung disease with rheumatoid arthritis of left knee"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "2017-06-05T18:14:45.000Z"
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/d36462575",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "d36462575",
+    "meta": {
+     "versionId": "36462575",
+     "lastUpdated": "2017-03-13T15:51:12.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Diagnosis</b>: Staphylococcal arthritis, left hip</p><p><b>Verification Status</b>: Entered In Error</p><p><b>Onset</b>: 2017-02-22T21:38:54.000Z</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "encounter": {
+     "reference": "Encounter/123456789"
+    },
+    "asserter": {
+     "reference": "Practitioner/4464007",
+     "display": "Portal, Portal"
+    },
+    "dateRecorded": "2017-02-22",
+    "code": {
+     "text": "Staphylococcal arthritis, left hip"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "verificationStatus": "entered-in-error",
+    "onsetDateTime": "2017-02-22T21:38:54.000Z"
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/d36490563",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "d36490563",
+    "meta": {
+     "versionId": "36490563",
+     "lastUpdated": "2017-03-13T15:50:48.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Diagnosis</b>: Alveolar proteinosis</p><p><b>Verification Status</b>: Entered In Error</p><p><b>Onset</b>: 2017-03-08T20:51:04.000Z</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "encounter": {
+     "reference": "Encounter/123456789"
+    },
+    "asserter": {
+     "reference": "Practitioner/4464007",
+     "display": "Portal, Portal"
+    },
+    "dateRecorded": "2017-03-08",
+    "code": {
+     "text": "Alveolar proteinosis"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "verificationStatus": "entered-in-error",
+    "onsetDateTime": "2017-03-08T20:51:04.000Z"
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/p6293861",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "p6293861",
+    "meta": {
+     "versionId": "6917893",
+     "lastUpdated": "2017-05-18T21:53:21.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Problem</b>: Diabetes mellitus</p><p><b>Clinical Status</b>: Remission</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 1989</p><p><b>Resolved</b>: false</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/1912007",
+     "display": "McCurdy, Michael"
+    },
+    "dateRecorded": "2016-06-24",
+    "code": {
+     "text": "Diabetes mellitus"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://argonaut.hl7.org",
+       "code": "problem",
+       "display": "Problem"
+      }
+     ],
+     "text": "Problem"
+    },
+    "clinicalStatus": "remission",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "1989",
+    "abatementBoolean": false
+   }
+  }
+ ]
+}

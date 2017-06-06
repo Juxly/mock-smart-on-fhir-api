@@ -1,0 +1,179 @@
+{
+ "resourceType": "Patient",
+ "id": "5566778899",
+ "extension": [
+  {
+   "url": "http://fhir.org/guides/argonaut/StructureDefinition/argo-race",
+   "extension": [
+    {
+     "url": "ombCategory",
+     "valueCoding": {
+      "system": "http://hl7.org/fhir/v3/Race",
+      "code": "2054-5",
+      "display": "Black or African American",
+      "userSelected": false
+     }
+    },
+    {
+     "url": "text",
+     "valueString": "Black or African American"
+    }
+   ]
+  },
+  {
+   "url": "http://fhir.org/guides/argonaut/StructureDefinition/argo-ethnicity",
+   "extension": [
+    {
+     "url": "ombCategory",
+     "valueCoding": {
+      "system": "http://hl7.org/fhir/v3/Ethnicity",
+      "code": "2186-5",
+      "display": "Not Hispanic or Latino",
+      "userSelected": false
+     }
+    },
+    {
+     "url": "text",
+     "valueString": "Not Hispanic or Latino"
+    }
+   ]
+  }
+ ],
+ "identifier": [
+  {
+   "use": "usual",
+   "type": {
+    "coding": [
+     {
+      "system": "http://hl7.org/fhir/v2/0203",
+      "code": "MR",
+      "display": "Medical record number",
+      "userSelected": false
+     }
+    ],
+    "text": "MRN"
+   },
+   "system": "urn:oid:1.1.1.1.1.1",
+   "value": "5566778899",
+   "period": {
+    "start": "2016-06-22T20:25:56.000Z"
+   }
+  },
+  {
+   "use": "usual",
+   "type": {
+    "coding": [
+     {
+      "system": "http://hl7.org/fhir/v2/0203",
+      "code": "AN",
+      "display": "Account number",
+      "userSelected": false
+     }
+    ],
+    "text": "Federated Person Principal"
+   },
+   "system": "urn:oid:2.16.840.1.113883.3.13.6",
+   "value": "urn:juxly:identity-federation:realm:687f29dd-69dd-4de5-acb1-fd8a2241ef3a:principal:LQ4Sg3D28BR",
+   "period": {
+    "start": "2016-11-01T10:00:00.000Z"
+   }
+  },
+  {
+   "use": "usual",
+   "type": {
+    "coding": [
+     {
+      "system": "http://hl7.org/fhir/v2/0203",
+      "code": "AN",
+      "display": "Account number",
+      "userSelected": false
+     }
+    ],
+    "text": "Federated Person Principal"
+   },
+   "system": "urn:oid:2.16.840.1.113883.3.13.6",
+   "value": "URN:juxly:IDENTITY-FEDERATION:REALM:687F29DD-69DD-4DE5-ACB1-FD8A2241EF3A:PRINCIPAL:LQ4SG3D28BR",
+   "period": {
+    "start": "2016-11-01T10:00:00.000Z"
+   }
+  }
+ ],
+ "active": true,
+ "name": [
+  {
+   "use": "official",
+   "text": "FISHER, FLYNNE",
+   "family": [
+    "FISHER"
+   ],
+   "given": [
+    "FLYNNE"
+   ],
+   "period": {
+    "start": "2016-06-22T20:25:58.000Z"
+   }
+  }
+ ],
+ "telecom": [
+  {
+   "system": "phone",
+   "value": "8168101010",
+   "use": "home",
+   "period": {
+    "start": "2017-02-07T18:56:52.000Z"
+   }
+  }
+ ],
+ "gender": "female",
+ "birthDate": "1947-03-16",
+ "address": [
+  {
+   "use": "home",
+   "text": "1200 Road\nKansas City, MO 64114\nUSA",
+   "line": [
+    "1200 Road"
+   ],
+   "city": "Kansas City",
+   "district": "Jackson",
+   "state": "MO",
+   "postalCode": "64114",
+   "country": "USA",
+   "period": {
+    "start": "2017-02-07T18:56:52.000Z"
+   }
+  }
+ ],
+ "maritalStatus": {
+  "coding": [
+   {
+    "system": "http://hl7.org/fhir/v3/MaritalStatus",
+    "code": "S",
+    "display": "Never Married",
+    "userSelected": false
+   }
+  ],
+  "text": "Never Married"
+ },
+ "communication": [
+  {
+   "language": {
+    "coding": [
+     {
+      "system": "urn:ietf:bcp:47",
+      "code": "hi",
+      "display": "Hindi",
+      "userSelected": false
+     }
+    ],
+    "text": "Hindi"
+   },
+   "preferred": true
+  }
+ ],
+ "careProvider": [
+  {
+   "reference": "Practitioner/123456789",
+   "display": "Fisher, Burton"
+  }
+ ]
+}

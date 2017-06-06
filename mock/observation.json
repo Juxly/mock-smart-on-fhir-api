@@ -1,0 +1,426 @@
+{
+ "resourceType": "Bundle",
+ "id": "651f6ccc-2ceb-4098-9296-a4731fb2065a",
+ "type": "searchset",
+ "link": [
+  {
+   "relation": "self",
+   "url": ""
+  }
+ ],
+ "entry": [
+  {
+   "fullUrl": "http://localhost:3000/api/Observation/M6445347",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "M6445347",
+    "meta": {
+     "versionId": "1-6445346",
+     "lastUpdated": "2016-06-24T16:12:57.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Observation</b></p><p><b>Patient</b>: 4342008</p><p><b>Status</b>: Auth (Verified)</p><p><b>Category</b>: Vital Signs</p><p><b>Code</b>: Pulse</p><p><b>Result</b>: 85 bpm</p><p><b>Risk Level</b>: Normal</p><p><b>Date</b>: 2016-06-24T16:10:00.000Z</p><p><b>Risk Level Detail</b>: Low: 55 bpm High: 95 bpm</p></div>"
+    },
+    "status": "final",
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/observation-category",
+       "code": "vital-signs",
+       "display": "Vital Signs"
+      }
+     ],
+     "text": "Vital Signs"
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "8867-4",
+       "display": "Heart rate"
+      },
+      {
+       "system": "http://loinc.org",
+       "code": "8867-4",
+       "display": "HEART BEAT:NRAT:PT:XXX:QN:"
+      }
+     ],
+     "text": "Pulse"
+    },
+    "subject": {
+     "reference": "Patient/4342008"
+    },
+    "encounter": {
+     "reference": "Encounter/4027906"
+    },
+    "effectiveDateTime": "2016-06-24T16:10:00.000Z",
+    "issued": "2016-06-24T16:10:37.000Z",
+    "valueQuantity": {
+     "value": 85,
+     "unit": "bpm",
+     "system": "http://unitsofmeasure.org",
+     "code": "{Beats}/min"
+    },
+    "interpretation": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/v2/0078",
+       "code": "N",
+       "display": "Normal"
+      }
+     ]
+    },
+    "referenceRange": [
+     {
+      "low": {
+       "value": 55,
+       "unit": "bpm",
+       "system": "http://unitsofmeasure.org",
+       "code": "{Beats}/min"
+      },
+      "high": {
+       "value": 95,
+       "unit": "bpm",
+       "system": "http://unitsofmeasure.org",
+       "code": "{Beats}/min"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Observation/BP-6445337-6445339",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "BP-6445337-6445339",
+    "meta": {
+     "versionId": "1-6445336-1-6445338",
+     "lastUpdated": "2016-06-24T16:12:57.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Observation</b></p><p><b>Patient</b>: 4342008</p><p><b>Status</b>: final</p><p><b>Category</b>: Vital Signs</p><p><b>Code</b>: Systolic Blood Pressure: Systolic Blood Pressure Diastolic Blood Pressure: Diastolic Blood Pressure</p><p><b>Result</b>: Systolic Blood Pressure: 130 mmHg Diastolic Blood Pressure: 80 mmHg</p><p><b>Risk Level</b>: HI</p><p><b>Date</b>: 2016-06-24T16:10:00.000Z</p><p><b>Risk Level Detail</b>: Systolic Blood Pressure: Low: 80 mmHg High: 120 mmHg Diastolic Blood Pressure: Low: 70 mmHg High: 80 mmHg</p></div>"
+    },
+    "status": "final",
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/observation-category",
+       "code": "vital-signs",
+       "display": "Vital Signs"
+      }
+     ],
+     "text": "Vital Signs"
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "75367002",
+       "display": "Blood pressure (observable entity)"
+      },
+      {
+       "system": "http://loinc.org",
+       "code": "55284-4",
+       "display": "Blood pressure systolic and diastolic"
+      }
+     ],
+     "text": "Blood pressure"
+    },
+    "subject": {
+     "reference": "Patient/4342008"
+    },
+    "encounter": {
+     "reference": "Encounter/4027906"
+    },
+    "effectiveDateTime": "2016-06-24T16:10:00.000Z",
+    "issued": "2016-06-24T16:10:37.000Z",
+    "interpretation": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/v2/0078",
+       "code": "H",
+       "display": "High"
+      }
+     ],
+     "text": "HI"
+    },
+    "component": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://loinc.org",
+         "code": "8480-6",
+         "display": "INTRAVASCULAR SYSTOLIC:PRES:PT:ARTERIAL SYSTEM:QN:"
+        },
+        {
+         "system": "http://loinc.org",
+         "code": "8480-6",
+         "display": "Systolic blood pressure"
+        }
+       ],
+       "text": "Systolic Blood Pressure"
+      },
+      "valueQuantity": {
+       "value": 130,
+       "unit": "mmHg",
+       "system": "http://unitsofmeasure.org",
+       "code": "mm[Hg]"
+      },
+      "referenceRange": [
+       {
+        "low": {
+         "value": 80,
+         "unit": "mmHg",
+         "system": "http://unitsofmeasure.org",
+         "code": "mm[Hg]"
+        },
+        "high": {
+         "value": 120,
+         "unit": "mmHg",
+         "system": "http://unitsofmeasure.org",
+         "code": "mm[Hg]"
+        }
+       }
+      ]
+     },
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://loinc.org",
+         "code": "8462-4",
+         "display": "INTRAVASCULAR DIASTOLIC:PRES:PT:ARTERIAL SYSTEM:QN:"
+        },
+        {
+         "system": "http://loinc.org",
+         "code": "8462-4",
+         "display": "Diastolic blood pressure"
+        }
+       ],
+       "text": "Diastolic Blood Pressure"
+      },
+      "valueQuantity": {
+       "value": 80,
+       "unit": "mmHg",
+       "system": "http://unitsofmeasure.org",
+       "code": "mm[Hg]"
+      },
+      "referenceRange": [
+       {
+        "low": {
+         "value": 70,
+         "unit": "mmHg",
+         "system": "http://unitsofmeasure.org",
+         "code": "mm[Hg]"
+        },
+        "high": {
+         "value": 80,
+         "unit": "mmHg",
+         "system": "http://unitsofmeasure.org",
+         "code": "mm[Hg]"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Observation/M6449291",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "M6449291",
+    "meta": {
+     "versionId": "1-6449290",
+     "lastUpdated": "2016-06-24T18:35:08.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Observation</b></p><p><b>Patient</b>: 4342008</p><p><b>Status</b>: Auth (Verified)</p><p><b>Category</b>: Laboratory</p><p><b>Code</b>: LDL</p><p><b>Result</b>: 168 mg/dL</p><p><b>Risk Level</b>: HI</p><p><b>Date</b>: 2016-06-24T18:32:00.000Z</p><p><b>Risk Level Detail</b>: Low: 60 mg/dL High: 139 mg/dL</p></div>"
+    },
+    "status": "final",
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/observation-category",
+       "code": "laboratory",
+       "display": "Laboratory"
+      }
+     ],
+     "text": "Laboratory"
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "13457-7",
+       "display": "CHOLESTEROL.IN LDL:MCNC:PT:SER/PLAS:QN:CALCULATED"
+      }
+     ],
+     "text": "LDL"
+    },
+    "subject": {
+     "reference": "Patient/4342008"
+    },
+    "encounter": {
+     "reference": "Encounter/4027906"
+    },
+    "effectiveDateTime": "2016-06-24T18:32:00.000Z",
+    "issued": "2016-06-24T18:35:07.000Z",
+    "valueQuantity": {
+     "value": 168,
+     "unit": "mg/dL",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/dL"
+    },
+    "interpretation": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/v2/0078",
+       "code": "H",
+       "display": "High"
+      }
+     ],
+     "text": "HI"
+    },
+    "referenceRange": [
+     {
+      "low": {
+       "value": 60,
+       "unit": "mg/dL",
+       "system": "http://unitsofmeasure.org",
+       "code": "mg/dL"
+      },
+      "high": {
+       "value": 139,
+       "unit": "mg/dL",
+       "system": "http://unitsofmeasure.org",
+       "code": "mg/dL"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Observation/M6993293",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "M6993293",
+    "meta": {
+     "versionId": "1-6993292",
+     "lastUpdated": "2017-03-21T14:51:22.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Observation</b></p><p><b>Patient</b>: 4342008</p><p><b>Status</b>: Auth (Verified)</p><p><b>Category</b>: Laboratory</p><p><b>Code</b>: Glucose Lvl</p><p><b>Result</b>: 120 mg/dL</p><p><b>Risk Level</b>: Normal</p><p><b>Date</b>: 2017-03-21T13:33:00.000Z</p><p><b>Risk Level Detail</b>: Low: 70 mg/dL High: 150 mg/dL</p></div>"
+    },
+    "status": "final",
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/observation-category",
+       "code": "laboratory",
+       "display": "Laboratory"
+      }
+     ],
+     "text": "Laboratory"
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "2345-7",
+       "display": "GLUCOSE:MCNC:PT:SER/PLAS:QN:"
+      }
+     ],
+     "text": "Glucose Lvl"
+    },
+    "subject": {
+     "reference": "Patient/4342008"
+    },
+    "encounter": {
+     "reference": "Encounter/4027906"
+    },
+    "effectiveDateTime": "2017-03-21T13:33:00.000Z",
+    "issued": "2017-03-21T14:49:52.000Z",
+    "valueQuantity": {
+     "value": 120,
+     "unit": "mg/dL",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/dL"
+    },
+    "interpretation": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/v2/0078",
+       "code": "N",
+       "display": "Normal"
+      }
+     ]
+    },
+    "referenceRange": [
+     {
+      "low": {
+       "value": 70,
+       "unit": "mg/dL",
+       "system": "http://unitsofmeasure.org",
+       "code": "mg/dL"
+      },
+      "high": {
+       "value": 150,
+       "unit": "mg/dL",
+       "system": "http://unitsofmeasure.org",
+       "code": "mg/dL"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Observation/93-6281879",
+   "resource": {
+    "resourceType": "Observation",
+    "id": "93-6281879",
+    "meta": {
+     "versionId": "6281879",
+     "lastUpdated": "2016-06-24T15:04:50.000Z"
+    },
+    "status": "final",
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/observation-category",
+       "code": "social-history",
+       "display": "Social History"
+      }
+     ],
+     "text": "Social History"
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "229819007",
+       "display": "Tobacco use and exposure (observable entity)"
+      },
+      {
+       "system": "http://loinc.org",
+       "code": "72166-2",
+       "display": "Tobacco smoking status NHIS"
+      }
+     ],
+     "text": "Tobacco"
+    },
+    "subject": {
+     "reference": "Patient/4342008"
+    },
+    "valueCodeableConcept": {
+     "text": "Denies Tobacco Use"
+    }
+   }
+  }
+ ]
+}
