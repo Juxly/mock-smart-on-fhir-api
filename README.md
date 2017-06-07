@@ -9,6 +9,9 @@ Node/Express.
 
 ## Run
 ```
+npm install mongoose-data-seed -g (Optional: Runs seeder for database)
+docker run -p 27017:27017 -d --name db mongo (Runs mongodb docker image)
 npm install
+npm run seed (Optional: Runs seeders)
 npm start
 ```

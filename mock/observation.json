@@ -18,10 +18,6 @@
      "versionId": "1-6445346",
      "lastUpdated": "2016-06-24T16:12:57.000Z"
     },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Observation</b></p><p><b>Patient</b>: 4342008</p><p><b>Status</b>: Auth (Verified)</p><p><b>Category</b>: Vital Signs</p><p><b>Code</b>: Pulse</p><p><b>Result</b>: 85 bpm</p><p><b>Risk Level</b>: Normal</p><p><b>Date</b>: 2016-06-24T16:10:00.000Z</p><p><b>Risk Level Detail</b>: Low: 55 bpm High: 95 bpm</p></div>"
-    },
     "status": "final",
     "category": {
      "coding": [
@@ -97,10 +93,6 @@
     "meta": {
      "versionId": "1-6445336-1-6445338",
      "lastUpdated": "2016-06-24T16:12:57.000Z"
-    },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Observation</b></p><p><b>Patient</b>: 4342008</p><p><b>Status</b>: final</p><p><b>Category</b>: Vital Signs</p><p><b>Code</b>: Systolic Blood Pressure: Systolic Blood Pressure Diastolic Blood Pressure: Diastolic Blood Pressure</p><p><b>Result</b>: Systolic Blood Pressure: 130 mmHg Diastolic Blood Pressure: 80 mmHg</p><p><b>Risk Level</b>: HI</p><p><b>Date</b>: 2016-06-24T16:10:00.000Z</p><p><b>Risk Level Detail</b>: Systolic Blood Pressure: Low: 80 mmHg High: 120 mmHg Diastolic Blood Pressure: Low: 70 mmHg High: 80 mmHg</p></div>"
     },
     "status": "final",
     "category": {
@@ -237,10 +229,6 @@
      "versionId": "1-6449290",
      "lastUpdated": "2016-06-24T18:35:08.000Z"
     },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Observation</b></p><p><b>Patient</b>: 4342008</p><p><b>Status</b>: Auth (Verified)</p><p><b>Category</b>: Laboratory</p><p><b>Code</b>: LDL</p><p><b>Result</b>: 168 mg/dL</p><p><b>Risk Level</b>: HI</p><p><b>Date</b>: 2016-06-24T18:32:00.000Z</p><p><b>Risk Level Detail</b>: Low: 60 mg/dL High: 139 mg/dL</p></div>"
-    },
     "status": "final",
     "category": {
      "coding": [
@@ -312,10 +300,6 @@
     "meta": {
      "versionId": "1-6993292",
      "lastUpdated": "2017-03-21T14:51:22.000Z"
-    },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Observation</b></p><p><b>Patient</b>: 4342008</p><p><b>Status</b>: Auth (Verified)</p><p><b>Category</b>: Laboratory</p><p><b>Code</b>: Glucose Lvl</p><p><b>Result</b>: 120 mg/dL</p><p><b>Risk Level</b>: Normal</p><p><b>Date</b>: 2017-03-21T13:33:00.000Z</p><p><b>Risk Level Detail</b>: Low: 70 mg/dL High: 150 mg/dL</p></div>"
     },
     "status": "final",
     "category": {

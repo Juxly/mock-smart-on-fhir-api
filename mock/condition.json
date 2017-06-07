@@ -19,10 +19,6 @@
      "versionId": "36634557",
      "lastUpdated": "2017-05-18T21:54:12.000Z"
     },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Diagnosis</b>: Abdominal aortic aneurysm, without rupture, Abdominal aortic aneurysm, without rupture</p><p><b>Clinical Status</b>: active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2017-05-18T05:00:00.000Z</p></div>"
-    },
     "patient": {
      "reference": "Patient/5566778899",
      "display": "FISHER, FLYNNE"
@@ -70,10 +66,6 @@
      "versionId": "6917903",
      "lastUpdated": "2017-05-18T21:56:33.000Z"
     },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Problem</b>: Morbid (severe) obesity due to excess calories, Morbid (severe) obesity due to excess calories</p><p><b>Clinical Status</b>: Active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 1978</p><p><b>Resolved</b>: false</p></div>"
-    },
     "patient": {
      "reference": "Patient/5566778899",
      "display": "FISHER, FLYNNE"
@@ -119,10 +111,6 @@
      "versionId": "6901865",
      "lastUpdated": "2017-05-03T21:40:54.000Z"
     },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Problem</b>: Back abrasion, Abrasion, back (disorder)</p><p><b>Verification Status</b>: Entered In Error</p><p><b>Resolved</b>: false</p></div>"
-    },
     "patient": {
      "reference": "Patient/5566778899",
      "display": "FISHER, FLYNNE"
@@ -165,10 +153,6 @@
     "meta": {
      "versionId": "6946431",
      "lastUpdated": "2017-06-05T18:33:24.000Z"
-    },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Problem</b>: Rheumatoid lung disease with rheumatoid arthritis of left knee, Rheumatoid lung disease with rheumatoid arthritis of left knee</p><p><b>Clinical Status</b>: Active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2017-06-05</p><p><b>Resolved</b>: false</p></div>"
     },
     "patient": {
      "reference": "Patient/5566778899",
@@ -214,10 +198,6 @@
     "meta": {
      "versionId": "36658603",
      "lastUpdated": "2017-06-05T18:14:45.000Z"
-    },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Diagnosis</b>: Rheumatoid lung disease with rheumatoid arthritis of left knee, Rheumatoid lung disease with rheumatoid arthritis of left knee</p><p><b>Clinical Status</b>: active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2017-06-05T18:14:45.000Z</p></div>"
     },
     "patient": {
      "reference": "Patient/5566778899",
@@ -266,10 +246,6 @@
      "versionId": "36462575",
      "lastUpdated": "2017-03-13T15:51:12.000Z"
     },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Diagnosis</b>: Staphylococcal arthritis, left hip</p><p><b>Verification Status</b>: Entered In Error</p><p><b>Onset</b>: 2017-02-22T21:38:54.000Z</p></div>"
-    },
     "patient": {
      "reference": "Patient/5566778899",
      "display": "FISHER, FLYNNE"
@@ -308,10 +284,6 @@
      "versionId": "36490563",
      "lastUpdated": "2017-03-13T15:50:48.000Z"
     },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Diagnosis</b>: Alveolar proteinosis</p><p><b>Verification Status</b>: Entered In Error</p><p><b>Onset</b>: 2017-03-08T20:51:04.000Z</p></div>"
-    },
     "patient": {
      "reference": "Patient/5566778899",
      "display": "FISHER, FLYNNE"
@@ -349,10 +321,6 @@
     "meta": {
      "versionId": "6917893",
      "lastUpdated": "2017-05-18T21:53:21.000Z"
-    },
-    "text": {
-     "status": "generated",
-     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Problem</b>: Diabetes mellitus</p><p><b>Clinical Status</b>: Remission</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 1989</p><p><b>Resolved</b>: false</p></div>"
     },
     "patient": {
      "reference": "Patient/5566778899",
