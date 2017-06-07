@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken'
+import _ from 'lodash'
 import config from '../config'
 
 class AuthService {
@@ -27,6 +28,21 @@ class AuthService {
     token.patient = '5566778899'
     token.user = '987654321'
     return token
+  }
+
+  checkToken (req, res, next) {
+    let token = req.body.token || req.query.token || req.headers['authorization']
+    if (_.includes(token, 'Bearer')) token = token.replace('Bearer ', '')
+    if (token) {
+      try {
+        jwt.verify(token, config.secret)
+      } catch (e) {
+        return res.status(401).send('token is invalid')
+      }
+      next()
+    } else {
+      return res.status(403).send('token was not provided.')
+    }
   }
 }
 

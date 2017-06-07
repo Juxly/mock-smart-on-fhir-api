@@ -15,6 +15,8 @@ import patient from './routes/patient'
 import condition from './routes/condition'
 import observation from './routes/observation'
 
+import AuthService from './services/auth.service'
+
 let app = express()
 
 app.use(cors())
@@ -31,9 +33,9 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', routes)
 app.use('/api/oauth', auth)
 app.use('/api/metadata', metadata)
-app.use('/api/patient', patient)
-app.use('/api/condition', condition)
-app.use('/api/observation', observation)
+app.use('/api/patient', AuthService.checkToken, patient)
+app.use('/api/condition', AuthService.checkToken, condition)
+app.use('/api/observation', AuthService.checkToken, observation)
 
 app.use((req, res, next) => {
   let err = new Error('Not Found')
