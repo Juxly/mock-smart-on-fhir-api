@@ -1,5 +1,4 @@
 import jwt from 'jsonwebtoken'
-import _ from 'lodash'
 import config from '../config'
 
 class AuthService {
@@ -32,7 +31,7 @@ class AuthService {
 
   checkToken (req, res, next) {
     let token = req.body.token || req.query.token || req.headers['authorization']
-    if (_.includes(token, 'Bearer')) token = token.replace('Bearer ', '')
+    if (token.includes('Bearer')) token = token.replace('Bearer ', '')
     if (token) {
       try {
         jwt.verify(token, config.secret)

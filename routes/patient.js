@@ -3,8 +3,9 @@ import PatientService from '../services/patient.service'
 var router = express.Router()
 
 router.get('/:patientId', function (req, res) {
-  var pt = PatientService.get(req.query.patientId)
-  return res.send(pt)
+  PatientService.get(req.params.patientId).then(function (result) {
+    return res.send(result)
+  })
 })
 
 module.exports = router

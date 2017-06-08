@@ -1,8 +1,8 @@
-import mockPatient from '../mock/patient.json'
+import Patient from '../models/patient'
 
 class PatientService {
   get (patientId) {
-    return mockPatient
+    return Patient.findOne({id: patientId}).exec()
   }
 }
 

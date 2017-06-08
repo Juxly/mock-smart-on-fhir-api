@@ -6,6 +6,7 @@ import logger from 'morgan'
 import cookieParser from 'cookie-parser'
 import bodyParser from 'body-parser'
 import cors from 'cors'
+import mongoose from 'mongoose'
 
 // routes
 import routes from './routes/index'
@@ -16,10 +17,13 @@ import condition from './routes/condition'
 import observation from './routes/observation'
 
 import AuthService from './services/auth.service'
+import config from './config'
 
 let app = express()
+mongoose.Promise = global.Promise
+mongoose.connect(config.mongoURL)
 
-app.use(cors())
+app.use(cors({exposedHeaders: ['ETag', 'Location']}))
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'jade')

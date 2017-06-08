@@ -1,55 +1,55 @@
 import _ from 'lodash'
-import mockObservations from '../mock/observation.json'
+import Observation from '../models/observation'
 
 class ObervationService {
   get (req) {
-    let entries = []
+    const patientId = 'Patient/' + req.query.patientId
+    let promise = {}
     if (req.query.code) {
-      entries = this._getByCode(req.query.code)
+      promise = this._getByCode(patientId, req.query.code)
     } else if (req.query.category) {
-      entries = this._getByCategory(req.query.category)
+      promise = this._getByCategory(patientId, req.query.category)
     } else {
-      entries = mockObservations.entry
+      promise = this._getAll(patientId)
     }
-    return {
-      resourceType: 'Bundle',
-      id: '651f6ccc-2ceb-4098-9296-a4731fb2065a',
-      type: 'searchset',
-      link: [
-        {
-          relation: 'self',
-          url: ''
-        }
-      ],
-      entry: entries
-    }
+
+    return promise.then(function (result) {
+      console.log(result)
+      // TODO: Look into the right way to bundle this
+      return {
+        id: '651f6ccc-2ceb-4098-9296-a4731fb2065a',
+        resourceType: 'Bundle',
+        type: 'searchset',
+        link: [
+          {
+            relation: 'self',
+            url: ''
+          }
+        ],
+        entry: _.map(result, re => { return { resource: re } })
+      }
+    })
   }
 
-  _getByCode (code) {
-    let obs = []
-    _.forEach(code.split(','), c => {
+  _getAll (patientId) {
+    return Observation.find({ 'patient.subject': patientId }).then(result => {
+      return result
+    })
+  }
+
+  _getByCode (patientId, code) {
+    const codeArray = _.compact(_.map(code.split(','), c => {
       const index = c.indexOf('|')
       if (index < 0) return
-      const searchSystem = c.substring(0, index)
       const searchCode = c.substring(index + 1)
-      const o = _.find(mockObservations.entry, mock => {
-        let coding = _.find(mock.resource.code.coding, ['system', searchSystem])
-        if (!coding) return
-        if (coding.code === searchCode) return mock
-      })
-      if (o) obs.push(o)
-    })
-    return obs
+      return searchCode
+    }))
+    return Observation.find({ 'code.coding.code': { $in: codeArray } })
   }
 
-  _getByCategory (category) {
-    const catArray = category.replace('http://hl7.org/fhir/observation-category', '').split('|')
-    let obs = []
-    _.forEach(catArray, cat => {
-      if (!cat) return
-      obs = obs.concat(_.filter(mockObservations.entry, ['resource.category.coding[0].code', cat]))
-    })
-    return obs
+  _getByCategory (patientId, category) {
+    const catArray = _.compact(category.replace('http://hl7.org/fhir/observation-category', '').split('|'))
+    return Observation.find({ 'category.coding.code': { $in: catArray } })
   }
 }
 

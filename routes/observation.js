@@ -3,8 +3,9 @@ import ObervationService from '../services/observation.service'
 var router = express.Router()
 
 router.get('/', function (req, res) {
-  var obs = ObervationService.get(req)
-  return res.send(obs)
+  return ObervationService.get(req).then(result => {
+    return res.send(result)
+  })
 })
 
 module.exports = router

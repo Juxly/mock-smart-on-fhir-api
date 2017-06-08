@@ -5,7 +5,7 @@ Node/Express.
 
 ## TODO
 * Stub the rest of FHIR resources
-* Add persistance for POST/PUTs
+* Add Validation
 
 ## Run
 ```

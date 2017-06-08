@@ -1,8 +1,29 @@
-import mockConditions from '../mock/condition.json'
+import _ from 'lodash'
+import shortid from 'shortid'
+import Condition from '../models/condition'
 
 class ConditionService {
   get (patientId) {
-    return mockConditions
+    const reg = 'Patient/' + patientId
+    return Condition.find({'patient.reference': reg}).then(result => {
+      // TODO: Look into the right way to bundle this
+      return {
+        entry: _.map(result, (re) => { return { resource: re } })
+      }
+    })
+  }
+
+  save (condition) {
+    if (!condition.id) condition.id = shortid.generate()
+    return Condition.findOneAndUpdate({
+      id: condition.id
+    }, condition, {upsert: true, 'new': true}).then(result => {
+      result.meta = {
+        versionId: result.__v,
+        lastUpdated: new Date()
+      }
+      return result
+    })
   }
 }
 
