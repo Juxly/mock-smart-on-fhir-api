@@ -1,8 +1,12 @@
 import jwt from 'jsonwebtoken'
-// import randtoken from 'rand-token'
+import randtoken from 'rand-token'
+import _ from 'lodash'
 import config from '../config'
 
 class AuthService {
+  constructor () {
+    this.refreshTokens = {}
+  }
   authorize (req) {
     const incomingJwt = req.query.launch && req.query.launch.replace(/=/g, '')
     const code = {
@@ -11,7 +15,7 @@ class AuthService {
       scope: req.query.scope
     }
     const state = req.query.state
-    const signedCode = jwt.sign(code, config.secret, { expiresIn: '10m' })
+    const signedCode = jwt.sign(code, config.secret, { expiresIn: '15m' })
     return {code: signedCode, state: state}
   }
 
@@ -27,8 +31,9 @@ class AuthService {
       scope: code.scope,
       client_id: clientId
     }
-    token.access_token = jwt.sign({...token}, config.secret, { expiresIn: '15m' })
-    token.refresh_token = jwt.sign({...token}, config.secret, { expiresIn: '1h' })
+    token.access_token = jwt.sign({...token}, config.secret, { expiresIn: '1m' })
+    token.refresh_token = randtoken.uid(256)
+    this.refreshTokens[token.refresh_token] = token
     // TODO: maybe don't hardcode the context
     token.encounter = context.encounter
     token.patient = context.patient
@@ -49,6 +54,11 @@ class AuthService {
     } else {
       return res.status(403).send('token was not provided.')
     }
+  }
+
+  getRefreshToken (token) {
+    if (token && this.refreshTokens[token]) return this.refreshTokens[token]
+    else throw new Error('Unable to find refresh token')
   }
 }
 

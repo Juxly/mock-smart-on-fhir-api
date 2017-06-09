@@ -15,16 +15,14 @@ router.post('/token', (req, res) => {
   if (!req.body || !req.body.grant_type) return res.status(400).send('grant_type is required')
   let authCode = ''
   let code = ''
-  if (req.body.grant_type === 'authorization_code') authCode = req.body.code
-  else {
-    authCode = req.body.refresh_token
-  }
-
-  try {
-    code = jwt.verify(authCode, config.secret)
-  } catch (e) {
-    return res.status(401).send('token is invalid')
-  }
+  if (req.body.grant_type === 'authorization_code') {
+    authCode = req.body.code
+    try {
+      code = jwt.verify(authCode, config.secret)
+    } catch (e) {
+      return res.status(401).send('token is invalid')
+    }
+  } else code = AuthService.getRefreshToken(req.body.refresh_token)
 
   if (!code) return res.status(401).send('token is invalid')
   const token = AuthService.createToken(code, req.body.client_id)
