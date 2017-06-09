@@ -14,7 +14,6 @@ class ObervationService {
     }
 
     return promise.then(function (result) {
-      console.log(result)
       // TODO: Look into the right way to bundle this
       return {
         id: '651f6ccc-2ceb-4098-9296-a4731fb2065a',

@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken'
+// import randtoken from 'rand-token'
 import config from '../config'
 
 class AuthService {
@@ -15,17 +16,23 @@ class AuthService {
   }
 
   createToken (code, clientId) {
-    let token = {...code.context,
+    let context = {...code.context,
+      encounter: '123456789',
+      patient: '5566778899',
+      user: '987654321'
+    }
+    let token = {...context,
       token_type: 'bearer',
       expires_in: 3600,
       scope: code.scope,
       client_id: clientId
     }
-    token.access_token = jwt.sign({...token}, config.secret, { expiresIn: '1h' })
+    token.access_token = jwt.sign({...token}, config.secret, { expiresIn: '15m' })
+    token.refresh_token = jwt.sign({...token}, config.secret, { expiresIn: '1h' })
     // TODO: maybe don't hardcode the context
-    token.encounter = '123456789'
-    token.patient = '5566778899'
-    token.user = '987654321'
+    token.encounter = context.encounter
+    token.patient = context.patient
+    token.user = context.user
     return token
   }
 
