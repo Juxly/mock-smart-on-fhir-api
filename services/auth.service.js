@@ -31,7 +31,7 @@ class AuthService {
       scope: code.scope,
       client_id: clientId
     }
-    token.access_token = jwt.sign({...token}, config.secret, { expiresIn: '1m' })
+    token.access_token = jwt.sign({...token}, config.secret, { expiresIn: '10m' })
     token.refresh_token = randtoken.uid(256)
     this.refreshTokens[token.refresh_token] = token
     // TODO: maybe don't hardcode the context

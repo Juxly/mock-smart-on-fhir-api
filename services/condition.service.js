@@ -14,10 +14,15 @@ class ConditionService {
   }
 
   save (condition) {
-    if (!condition.id) condition.id = shortid.generate()
+    delete condition._id
+    if (!condition.id) {
+      condition.id = shortid.generate()
+      delete condition.__v
+    }
     return Condition.findOneAndUpdate({
       id: condition.id
     }, condition, {upsert: true, 'new': true}).then(result => {
+      console.log(result)
       result.meta = {
         versionId: result.__v,
         lastUpdated: new Date()
