@@ -45,7 +45,8 @@ const Condition = new mongoose.Schema({
       system: String,
       code: String,
       display: String
-    }]
+    }],
+    text: String
   },
   onsetDateTime: Date,
   abatementDateTime: Date,

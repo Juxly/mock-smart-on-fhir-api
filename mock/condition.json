@@ -96,6 +96,17 @@
      ],
      "text": "Problem"
     },
+    "severity": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "24484000",
+       "display": "Severe",
+       "userSelected": false
+      }
+     ],
+     "text": "Severe"
+    },
     "clinicalStatus": "active",
     "verificationStatus": "confirmed",
     "onsetDateTime": "1978",
