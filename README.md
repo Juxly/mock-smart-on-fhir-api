@@ -15,3 +15,15 @@ npm install
 npm run seed (Optional: Runs seeders)
 npm start
 ```
+
+## For OpenID
+For OpenID id_token
+
+Generate private/public key
+openssl genrsa -out pubpriv.pem 1024
+openssl rsa -in pubpriv.pem -pubout -out pubkey.pem
+openssl rsa -outform der -in pubpriv.pem -out private.key
+
+To get modulus/exponent from public key
+openssl rsa -pubin -inform PEM -text -noout < pubkey.pem
+

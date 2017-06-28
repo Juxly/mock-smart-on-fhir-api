@@ -16,7 +16,7 @@ class ConditionService {
   save (condition) {
     delete condition._id
     if (!condition.id) {
-      condition.id = shortid.generate()
+      condition.id = shortid.generate().toLowerCase()
       delete condition.__v
     }
     return Condition.findOneAndUpdate({

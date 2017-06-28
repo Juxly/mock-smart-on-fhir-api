@@ -15,6 +15,7 @@ import metadata from './routes/metadata'
 import patient from './routes/patient'
 import condition from './routes/condition'
 import observation from './routes/observation'
+import openid from './routes/openid'
 
 import AuthService from './services/auth.service'
 import config from './config'
@@ -37,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', routes)
 app.use('/api/oauth', auth)
 app.use('/api/metadata', metadata)
+app.use('/api/openid', openid)
 app.use('/api/patient', AuthService.checkToken, patient)
 app.use('/api/condition', AuthService.checkToken, condition)
 app.use('/api/observation', AuthService.checkToken, observation)

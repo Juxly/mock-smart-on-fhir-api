@@ -1,6 +1,5 @@
 import jwt from 'jsonwebtoken'
 import randtoken from 'rand-token'
-import _ from 'lodash'
 import config from '../config'
 
 class AuthService {
@@ -15,7 +14,7 @@ class AuthService {
       scope: req.query.scope
     }
     const state = req.query.state
-    const signedCode = jwt.sign(code, config.secret, { expiresIn: '15m' })
+    const signedCode = jwt.sign(code, config.key, { expiresIn: '15m' })
     return {code: signedCode, state: state}
   }
 
@@ -31,8 +30,9 @@ class AuthService {
       scope: code.scope,
       client_id: clientId
     }
-    token.access_token = jwt.sign({...token}, config.secret, { expiresIn: '10m' })
+    token.access_token = jwt.sign({...token}, config.key, { algorithm: 'RS256', expiresIn: '10m' })
     token.refresh_token = randtoken.uid(256)
+    token.id_token = jwt.sign(this._createOpenID(), config.key, {algorithm: 'RS256', keyid: '1'})
     this.refreshTokens[token.refresh_token] = token
     // TODO: maybe don't hardcode the context
     token.encounter = context.encounter
@@ -46,7 +46,7 @@ class AuthService {
     if (token.includes('Bearer')) token = token.replace('Bearer ', '')
     if (token) {
       try {
-        jwt.verify(token, config.secret)
+        jwt.verify(token, config.publicKey, {algorithm: 'RS256'})
       } catch (e) {
         return res.status(401).send('token is invalid')
       }
@@ -59,6 +59,15 @@ class AuthService {
   getRefreshToken (token) {
     if (token && this.refreshTokens[token]) return this.refreshTokens[token]
     else throw new Error('Unable to find refresh token')
+  }
+
+  _createOpenID () {
+    return {
+      sub: 'username',
+      aud: 'clientid',
+      iss: 'http://localhost:3000/api/openid/',
+      profile: 'http://localhot:3000/api/Practitioner/1'
+    }
   }
 }
 

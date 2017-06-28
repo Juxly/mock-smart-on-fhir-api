@@ -18,7 +18,7 @@ router.post('/token', (req, res) => {
   if (req.body.grant_type === 'authorization_code') {
     authCode = req.body.code
     try {
-      code = jwt.verify(authCode, config.secret)
+      code = jwt.verify(authCode, config.key)
     } catch (e) {
       return res.status(401).send('token is invalid')
     }
