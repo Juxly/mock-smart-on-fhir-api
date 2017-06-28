@@ -16,6 +16,7 @@ import patient from './routes/patient'
 import condition from './routes/condition'
 import observation from './routes/observation'
 import openid from './routes/openid'
+import documentRoute from './routes/document'
 
 import AuthService from './services/auth.service'
 import config from './config'
@@ -42,6 +43,7 @@ app.use('/api/openid', openid)
 app.use('/api/patient', AuthService.checkToken, patient)
 app.use('/api/condition', AuthService.checkToken, condition)
 app.use('/api/observation', AuthService.checkToken, observation)
+app.use('/api/documentreference', AuthService.checkToken, documentRoute)
 
 app.use((req, res, next) => {
   let err = new Error('Not Found')
