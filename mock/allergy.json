@@ -1,0 +1,1118 @@
+{
+  "resourceType": "Bundle",
+  "id": "4939bef3-e7a1-4962-9eca-9223f373c6ba",
+  "type": "searchset",
+  "total": 26,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/Condition?patient=5566778899"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/6331733",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "6331733",
+        "meta": {
+          "versionId": "6331733",
+          "lastUpdated": "2017-08-29T15:32:26.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Pet Dander</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: Low Risk</p><p><b>Category</b>: Medication</p><p><b>Onset</b>: 1986</p></div>"
+        },
+        "onset": "1986",
+        "recordedDate": "2017-08-29T10:32:26.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "reporter": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "Pet Dander"
+        },
+        "status": "active",
+        "criticality": "CRITL",
+        "type": "allergy",
+        "category": "medication"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/941725",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "941725",
+        "meta": {
+          "versionId": "1199150",
+          "lastUpdated": "2015-09-30T18:19:27.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: penicillin G benzathine</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: High Risk</p><p><b>Category</b>: Medication</p><p><b>Reactions</b>: Hives</p><p><b>Onset</b>: 2015-09</p></div>"
+        },
+        "onset": "2015-09",
+        "recordedDate": "2015-09-30T13:19:27.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "7980",
+              "display": "Penicillin G",
+              "userSelected": false
+            }
+          ],
+          "text": "penicillin G benzathine"
+        },
+        "status": "active",
+        "criticality": "CRITH",
+        "type": "allergy",
+        "category": "medication",
+        "reaction": [
+          {
+            "id": "941726",
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "247472004",
+                    "display": "Weal (disorder)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Hives"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1201236",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1201236",
+        "meta": {
+          "versionId": "1201236",
+          "lastUpdated": "2016-06-16T05:28:25.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Diaper Rash</p><p><b>Status</b>: Active</p><p><b>Category</b>: Medication</p></div>"
+        },
+        "recordedDate": "2016-06-16T00:28:25.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "Diaper Rash"
+        },
+        "status": "active",
+        "type": "allergy",
+        "category": "medication"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1200208",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1200208",
+        "meta": {
+          "versionId": "1200208",
+          "lastUpdated": "2016-03-29T09:05:57.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: horse chestnut</p><p><b>Status</b>: Active</p><p><b>Category</b>: Medication</p><p><b>Reactions</b>: Incongruous laughing</p></div>"
+        },
+        "recordedDate": "2016-03-29T04:05:57.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "317825",
+              "display": "Horse Chestnut Preparation",
+              "userSelected": false
+            }
+          ],
+          "text": "horse chestnut"
+        },
+        "status": "active",
+        "type": "allergy",
+        "category": "medication",
+        "reaction": [
+          {
+            "id": "5307731",
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "304254000",
+                    "display": "Incongruous laughing (finding)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Incongruous laughing"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/6139733",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "6139733",
+        "meta": {
+          "versionId": "6139733",
+          "lastUpdated": "2016-11-17T14:04:00.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Barium</p><p><b>Status</b>: Active</p><p><b>Category</b>: Medication</p></div>"
+        },
+        "recordedDate": "2016-11-17T08:04:00.000-06:00",
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39290007",
+              "display": "Barium (substance)",
+              "userSelected": false
+            }
+          ],
+          "text": "Barium"
+        },
+        "status": "active",
+        "type": "allergy",
+        "category": "medication"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1197542",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1197542",
+        "meta": {
+          "versionId": "6335735",
+          "lastUpdated": "2017-08-30T15:22:52.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: coccidioidin skin test</p><p><b>Status</b>: Active</p><p><b>Category</b>: Medication</p></div>"
+        },
+        "recordedDate": "2017-08-30T10:22:52.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "coccidioidin skin test"
+        },
+        "status": "active",
+        "type": "allergy",
+        "category": "medication",
+        "note": {
+          "text": "Comment 1"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1190046",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1190046",
+        "meta": {
+          "versionId": "1190046",
+          "lastUpdated": "2014-09-16T19:56:40.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Aspirin-Antacid</p><p><b>Status</b>: Active</p><p><b>Category</b>: Medication</p></div>"
+        },
+        "recordedDate": "2014-09-16T14:56:40.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1191",
+              "display": "Aspirin",
+              "userSelected": false
+            }
+          ],
+          "text": "Aspirin-Antacid"
+        },
+        "status": "active",
+        "type": "allergy",
+        "category": "medication"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1189020",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1189020",
+        "meta": {
+          "versionId": "1189020",
+          "lastUpdated": "2014-05-12T20:12:53.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: egg-containing compound</p><p><b>Status</b>: Active</p></div>"
+        },
+        "recordedDate": "2014-05-12T15:12:53.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "egg-containing compound"
+        },
+        "status": "active",
+        "type": "allergy",
+        "note": {
+          "text": ""
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1201240",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1201240",
+        "meta": {
+          "versionId": "1201240",
+          "lastUpdated": "2016-06-16T05:48:52.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Little Bottoms Diaper Rash</p><p><b>Status</b>: Active</p><p><b>Category</b>: Medication</p></div>"
+        },
+        "recordedDate": "2016-06-16T00:48:52.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "Little Bottoms Diaper Rash"
+        },
+        "status": "active",
+        "type": "allergy",
+        "category": "medication"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/6011733",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "6011733",
+        "meta": {
+          "versionId": "6383735",
+          "lastUpdated": "2017-10-19T19:42:19.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Hemoglobin Okaloosa</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: Low Risk</p><p><b>Category</b>: Medication</p><p><b>Onset</b>: 2012-12-14T18:00:00.000-06:00</p></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "RelatedPerson",
+            "id": "19775887",
+            "patient": {
+             "reference": "Patient/5566778899",
+             "display": "FISHER, FLYNNE"
+            },
+            "relationship": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v3/RoleCode",
+                  "code": "ONESELF",
+                  "display": "self"
+                }
+              ],
+              "text": "self"
+            }
+          }
+        ],
+        "onset": "2012-12-14T18:00:00.000-06:00",
+        "recordedDate": "2015-12-15T13:13:20.000-06:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "reporter": {
+          "reference": "#19775887",
+          "display": "self"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "102002",
+              "display": "Hemoglobin Okaloosa (substance)",
+              "userSelected": false
+            }
+          ],
+          "text": "Hemoglobin Okaloosa"
+        },
+        "status": "active",
+        "criticality": "CRITL",
+        "type": "allergy",
+        "category": "medication",
+        "note": {
+          "text": ""
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1189288",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1189288",
+        "meta": {
+          "versionId": "6347755",
+          "lastUpdated": "2017-09-01T16:07:50.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Anti-Itch</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: Low Risk</p><p><b>Category</b>: Medication</p><p><b>Reactions</b>: Abdominal pain</p></div>"
+        },
+        "recordedDate": "2016-06-17T01:37:51.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "3498",
+              "display": "Diphenhydramine",
+              "userSelected": false
+            }
+          ],
+          "text": "Anti-Itch"
+        },
+        "status": "active",
+        "criticality": "CRITL",
+        "type": "allergy",
+        "category": "medication",
+        "reaction": [
+          {
+            "id": "6347751",
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "21522001",
+                    "display": "Abdominal pain (finding)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Abdominal pain"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/6255733",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "6255733",
+        "meta": {
+          "versionId": "6255733",
+          "lastUpdated": "2017-06-17T10:17:12.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: calamine-diphenhydrAMINE topical</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: Low Risk</p><p><b>Category</b>: Medication</p><p><b>Reactions</b>: Hives</p><p><b>Onset</b>: 2015-12-14T16:00:00.000-08:00</p><p><b>Note</b>: 2017-02-28T09:03:00.000Z - Note 1</p></div>"
+        },
+        "onset": "2015-12-14T16:00:00.000-08:00",
+        "recordedDate": "2017-02-28T15:03:00.000-06:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "calamine-diphenhydrAMINE topical"
+        },
+        "status": "active",
+        "criticality": "CRITL",
+        "type": "allergy",
+        "category": "medication",
+        "note": {
+          "text": "2017-02-28T09:03:00.000Z - Note 1"
+        },
+        "reaction": [
+          {
+            "id": "6255735",
+            "manifestation": [
+              {
+                "text": "Hives"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/903725",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "903725",
+        "meta": {
+          "versionId": "1188814",
+          "lastUpdated": "2014-09-08T22:26:22.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Caffeine</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: High Risk</p><p><b>Category</b>: Food</p><p><b>Reactions</b>: Hives, Confusion, Anxiety</p><p><b>Onset</b>: 1981</p></div>"
+        },
+        "onset": "1981",
+        "recordedDate": "2014-09-08T17:26:22.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "reporter": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "Caffeine"
+        },
+        "status": "active",
+        "criticality": "CRITH",
+        "type": "allergy",
+        "category": "food",
+        "note": {
+          "text": ""
+        },
+        "reaction": [
+          {
+            "id": "965741",
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "247472004",
+                    "display": "Weal (disorder)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Hives"
+              }
+            ]
+          },
+          {
+            "id": "903727",
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "40917007",
+                    "display": "Clouded consciousness (finding)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Confusion"
+              }
+            ]
+          },
+          {
+            "id": "903726",
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "48694002",
+                    "display": "Anxiety (finding)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Anxiety"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/6331737",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "6331737",
+        "meta": {
+          "versionId": "6387733",
+          "lastUpdated": "2017-10-23T09:28:52.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Animal Dander</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: Low Risk</p><p><b>Category</b>: Environment</p><p><b>Onset</b>: 1986</p></div>"
+        },
+        "onset": "1986",
+        "recordedDate": "2017-08-30T16:13:29.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "Animal Dander"
+        },
+        "status": "active",
+        "criticality": "CRITL",
+        "type": "intolerance",
+        "category": "environment",
+        "note": {
+          "text": "Adding comment"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/6247733",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "6247733",
+        "meta": {
+          "versionId": "6247733",
+          "lastUpdated": "2017-06-01T21:23:36.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Peanut oil</p><p><b>Status</b>: Active</p><p><b>Category</b>: Food</p></div>"
+        },
+        "recordedDate": "2017-06-01T16:23:36.000-05:00",
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "417889008",
+              "display": "Arachis oil (substance)",
+              "userSelected": false
+            }
+          ],
+          "text": "Peanut oil"
+        },
+        "status": "active",
+        "type": "allergy",
+        "category": "food"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1188528",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1188528",
+        "meta": {
+          "versionId": "1188532",
+          "lastUpdated": "2014-03-24T14:05:12.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Jack &amp; Jill Thin Strips Cough</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: Low Risk</p><p><b>Category</b>: Medication</p><p><b>Note</b>: 2014-03-21T18:39:40.000Z - Venki testing</p></div>"
+        },
+        "recordedDate": "2014-03-24T09:05:12.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "Jack & Jill Thin Strips Cough"
+        },
+        "status": "active",
+        "criticality": "CRITL",
+        "type": "allergy",
+        "category": "medication",
+        "note": {
+          "text": "2014-03-21T18:39:40.000Z - Venki testing"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/5879733",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "5879733",
+        "meta": {
+          "versionId": "5879737",
+          "lastUpdated": "2016-08-02T20:13:00.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Strawberry</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: High Risk</p><p><b>Category</b>: Medication</p><p><b>Note</b>: 2013-10-18T19:20:58.000Z - magical tacos</p></div>"
+        },
+        "recordedDate": "2016-08-02T15:08:03.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "102261002",
+              "display": "Strawberry (substance)",
+              "userSelected": false
+            }
+          ],
+          "text": "Strawberry"
+        },
+        "status": "active",
+        "criticality": "CRITH",
+        "category": "medication",
+        "note": {
+          "text": "2013-10-18T19:20:58.000Z - magical tacos"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/905732",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "905732",
+        "meta": {
+          "versionId": "1198030",
+          "lastUpdated": "2015-07-24T17:56:56.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Penaten</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: High Risk</p><p><b>Category</b>: Medication</p><p><b>Onset</b>: 2012-05-01T00:00:00.000-05:00</p></div>"
+        },
+        "onset": "2012-05-01T00:00:00.000-05:00",
+        "recordedDate": "2015-07-24T12:56:56.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "Penaten"
+        },
+        "status": "active",
+        "criticality": "CRITH",
+        "type": "allergy",
+        "category": "medication"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1187744",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1187744",
+        "meta": {
+          "versionId": "1187748",
+          "lastUpdated": "2014-01-28T15:14:22.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: sulfa drugs</p><p><b>Status</b>: Active</p><p><b>Category</b>: Medication</p></div>"
+        },
+        "recordedDate": "2014-01-28T09:14:22.000-06:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "sulfa drugs"
+        },
+        "status": "active",
+        "type": "allergy",
+        "category": "medication"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1189016",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1189016",
+        "meta": {
+          "versionId": "1199146",
+          "lastUpdated": "2015-09-30T18:19:14.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Nutraderm 30</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: High Risk</p><p><b>Category</b>: Medication</p><p><b>Onset</b>: 2015</p></div>"
+        },
+        "onset": "2015",
+        "recordedDate": "2015-09-30T13:19:14.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "Nutraderm 30"
+        },
+        "status": "active",
+        "criticality": "CRITH",
+        "type": "allergy",
+        "category": "medication",
+        "note": {
+          "text": ""
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/5879745",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "5879745",
+        "meta": {
+          "versionId": "5879749",
+          "lastUpdated": "2016-08-02T20:25:21.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Acetaminophen</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: High Risk</p><p><b>Category</b>: Medication</p><p><b>Note</b>: 2013-10-18T19:20:58.000Z - magical tacos</p></div>"
+        },
+        "recordedDate": "2016-08-02T15:22:11.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387517004",
+              "display": "Acetaminophen (substance)",
+              "userSelected": false
+            }
+          ],
+          "text": "Acetaminophen"
+        },
+        "status": "active",
+        "criticality": "CRITH",
+        "category": "medication",
+        "note": {
+          "text": "2013-10-18T19:20:58.000Z - magical tacos"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/5951733",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "5951733",
+        "meta": {
+          "versionId": "5951733",
+          "lastUpdated": "2016-08-30T21:37:18.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Shellfish</p><p><b>Status</b>: Active</p><p><b>Criticality</b>: Low Risk</p><p><b>Category</b>: Food</p><p><b>Reactions</b>: Hives</p></div>"
+        },
+        "recordedDate": "2016-08-30T16:37:18.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "reporter": {
+          "reference": "Patient/1316024",
+          "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "227146005",
+              "display": "Shellfish - dietary (substance)",
+              "userSelected": false
+            }
+          ],
+          "text": "Shellfish"
+        },
+        "status": "active",
+        "criticality": "CRITL",
+        "type": "allergy",
+        "category": "food",
+        "reaction": [
+          {
+            "id": "5951735",
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "126485001",
+                    "display": "Urticaria (disorder)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Hives"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1197194",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1197194",
+        "meta": {
+          "versionId": "1197194",
+          "lastUpdated": "2015-05-07T16:21:36.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Strawberries</p><p><b>Status</b>: Active</p></div>"
+        },
+        "recordedDate": "2015-05-07T11:21:36.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "Strawberries"
+        },
+        "status": "active",
+        "type": "allergy"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/6339739",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "6339739",
+        "meta": {
+          "versionId": "6339765",
+          "lastUpdated": "2017-08-30T20:15:09.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Cat allergies</p><p><b>Status</b>: Active</p><p><b>Category</b>: Environment</p><p><b>Reactions</b>: Hives</p><p><b>Onset</b>: 1986</p></div>"
+        },
+        "onset": "1986",
+        "recordedDate": "2017-08-30T15:15:09.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "232346004",
+              "display": "Cat allergy (disorder)",
+              "userSelected": false
+            }
+          ],
+          "text": "Cat allergies"
+        },
+        "status": "active",
+        "type": "allergy",
+        "category": "environment",
+        "note": {
+          "text": "Adding a comment"
+        },
+        "reaction": [
+          {
+            "id": "6339767",
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "247472004",
+                    "display": "Weal (disorder)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Hives"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1188972",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1188972",
+        "meta": {
+          "versionId": "1188972",
+          "lastUpdated": "2014-05-08T22:03:42.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Nuts</p><p><b>Status</b>: Active</p></div>"
+        },
+        "recordedDate": "2014-05-08T17:03:42.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "text": "Nuts"
+        },
+        "status": "active",
+        "type": "allergy"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/AllergyIntolerance/1190106",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1190106",
+        "meta": {
+          "versionId": "1190106",
+          "lastUpdated": "2014-09-19T09:33:20.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: FISHER, FLYNNE</p><p><b>Allergy</b>: Cold</p><p><b>Status</b>: Active</p><p><b>Category</b>: Medication</p></div>"
+        },
+        "recordedDate": "2014-09-19T04:33:20.000-05:00",
+        "recorder": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "substance": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "214394",
+              "display": "Chlorpheniramine / Phenylpropanolamine",
+              "userSelected": false
+            }
+          ],
+          "text": "Cold"
+        },
+        "status": "active",
+        "type": "allergy",
+        "category": "medication"
+      }
+    }
+  ]
+}

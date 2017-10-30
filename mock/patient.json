@@ -1,4 +1,4 @@
-{
+[{
  "resourceType": "Patient",
  "id": "5566778899",
  "extension": [
@@ -176,4 +176,4 @@
    "display": "Fisher, Burton"
   }
  ]
-}
+}]

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "babel-node --presets es2015 ./bin/www",
-    "seed": "md-seed run"
+    "seed": "md-seed run --dropdb"
   },
   "dependencies": {
     "body-parser": "~1.13.2",

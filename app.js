@@ -17,6 +17,8 @@ import condition from './routes/condition'
 import observation from './routes/observation'
 import openid from './routes/openid'
 import documentRoute from './routes/document'
+import allergyRoute from './routes/allergyintolerance'
+import procedureRoute from './routes/procedure'
 
 import AuthService from './services/auth.service'
 import config from './config'
@@ -44,6 +46,8 @@ app.use('/api/patient', AuthService.checkToken, patient)
 app.use('/api/condition', AuthService.checkToken, condition)
 app.use('/api/observation', AuthService.checkToken, observation)
 app.use('/api/documentreference', AuthService.checkToken, documentRoute)
+app.use('/api/allergyintolerance', AuthService.checkToken, allergyRoute)
+app.use('/api/procedure', AuthService.checkToken, procedureRoute)
 
 app.use((req, res, next) => {
   let err = new Error('Not Found')

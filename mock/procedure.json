@@ -1,0 +1,116 @@
+{
+  "resourceType": "Bundle",
+  "id": "d0fdf3de-a8dc-41f0-b128-962625be7fe2",
+  "type": "searchset",
+  "total": 3,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/Procedure?patient=5566778899"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/Procedure/36530557",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "36530557",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2017-09-28T15:34:40.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Procedure</b></p><p><b>Subject</b>: FISHER, FLYNNE</p><p><b>Code</b>: Renal angiogram, 420013002</p><p><b>Status</b>: Completed</p></div>"
+        },
+        "subject": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "420013002",
+              "display": "Fluoroscopic angiography of renal artery (procedure)"
+            }
+          ],
+          "text": "Renal angiogram"
+        },
+        "performedDateTime": "2017-02-02T22:00:00.000-08:00",
+        "encounter": {
+         "reference": "Encounter/123456789"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Procedure/36790585",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "36790585",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2017-09-28T15:34:08.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Procedure</b></p><p><b>Subject</b>: FISHER, FLYNNE</p><p><b>Code</b>: Cholecystectomy;, 47600</p><p><b>Status</b>: Completed</p></div>"
+        },
+        "subject": {
+          "reference": "Patient/5566778899",
+          "display": "FISHER, FLYNNE"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "47600",
+              "display": "Cholecystectomy;"
+            }
+          ],
+          "text": "Cholecystectomy;"
+        },
+        "performedDateTime": "2017-08-01T22:00:00.000-07:00",
+        "encounter": {
+          "reference": "Encounter/4027906"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Procedure/36790591",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "36790591",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2017-09-28T15:34:27.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Procedure</b></p><p><b>Subject</b>: FISHER, FLYNNE</p><p><b>Code</b>: Inguinal hernia on right side, 236021006</p><p><b>Status</b>: Completed</p></div>"
+        },
+        "subject": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "236021006",
+              "display": "Right inguinal hernia (disorder)"
+            }
+          ],
+          "text": "Inguinal hernia on right side"
+        },
+        "performedDateTime": "2017-05-13T22:00:00.000-07:00",
+        "encounter": {
+          "reference": "Encounter/4027906"
+        }
+      }
+    }
+  ]
+}

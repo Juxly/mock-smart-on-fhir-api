@@ -3,7 +3,7 @@ import ConditionService from '../services/condition.service'
 var router = express.Router()
 
 router.get('/', function (req, res) {
-  return ConditionService.get(req.query.patient).then(result => {
+  return ConditionService.get(req.query.patient, req.query.clinicalstatus).then(result => {
     return res.send(result)
   })
 })

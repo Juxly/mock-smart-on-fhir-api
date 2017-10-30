@@ -2,6 +2,8 @@ import mongooseLib from 'mongoose'
 import Conditions from './seeders/conditions.seeder'
 import Patients from './seeders/patients.seeder'
 import Observations from './seeders/observations.seeder'
+import Allergies from './seeders/allergy.seeder'
+import Procedures from './seeders/procedures.seeder'
 mongooseLib.Promise = global.Promise
 
 // Export the mongoose lib
@@ -18,5 +20,7 @@ export const mongoURL = process.env.MONGO_URL || 'mongodb://localhost:27017/juxl
 export const seedersList = {
   Patients,
   Conditions,
-  Observations
+  Observations,
+  Allergies,
+  Procedures
 }
