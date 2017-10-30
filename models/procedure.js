@@ -1,14 +1,8 @@
 import mongoose from 'mongoose'
-import shortid from 'shortid'
+import Base from './base'
+import utils from './utils'
 
-const Procedure = new mongoose.Schema({
-  _id: { type: String, default: shortid.generate },
-  id: { type: {} },
-  resourceType: String,
-  meta: {
-    versionId: Number,
-    lastUpdated: Date
-  },
+const Procedure = utils.extend(Base, {
   subject: {
     reference: String,
     display: String

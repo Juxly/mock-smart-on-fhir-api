@@ -1,0 +1,92 @@
+{
+  "resourceType": "Bundle",
+  "id": "097fa1d3-f515-4098-8777-c1da208b6e36",
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/Immunization?patient=4342008"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/Immunization/M6993311",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "M6993311",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2017-03-21T10:51:22-05:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Immunization</b></p><p><b>Vaccine</b>: influenza virus vaccine, inactivated</p><p><b>Date</b>: 2017-02-07T08:49:00-06:00</p><p><b>Given</b>: Yes</p><p><b>Administered by</b>: Portal, Portal</p><p><b>Site</b>: Left Arm</p><p><b>Route</b>: IM</p></div>"
+        },
+        "status": "completed",
+        "date": "2017-02-07T08:49:00-06:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "88",
+              "display": "influenza, unspecified formulation",
+              "userSelected": false
+            }
+          ],
+          "text": "influenza virus vaccine, inactivated"
+        },
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "performer": {
+         "reference": "Practitioner/4464007",
+         "display": "Portal, Portal"
+        },
+        "encounter": {
+          "reference": "Encounter/123456789"
+        },
+        "manufacturer": {
+          "display": "Merck & Company Inc"
+        },
+        "location": {
+          "reference": "Location/4048296",
+          "display": "FPC"
+        },
+        "lotNumber": "UI89748",
+        "expirationDate": "2017-06-01",
+        "site": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368208006",
+              "display": "left upper arm structure (body structure)",
+              "userSelected": false
+            }
+          ],
+          "text": "Left Arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "78421000",
+              "display": "Intramuscular route (qualifier value)",
+              "userSelected": false
+            }
+          ],
+          "text": "IM"
+        },
+        "doseQuantity": {
+          "value": 1,
+          "unit": "mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL"
+        }
+      }
+    }
+  ]
+}

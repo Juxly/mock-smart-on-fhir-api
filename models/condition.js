@@ -1,14 +1,8 @@
 import mongoose from 'mongoose'
-import shortid from 'shortid'
+import Base from './base'
+import utils from './utils'
 
-const Condition = new mongoose.Schema({
-  _id: { type: String, default: shortid.generate },
-  id: { type: {} },
-  resourceType: String,
-  meta: {
-    versionId: Number,
-    lastUpdated: Date
-  },
+const Condition = utils.extend(Base, {
   patient: {
     reference: String,
     display: String

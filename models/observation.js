@@ -1,14 +1,8 @@
 import mongoose from 'mongoose'
-import shortid from 'shortid'
+import Base from './base'
+import utils from './utils'
 
-const Observation = new mongoose.Schema({
-  _id: { type: String, default: shortid.generate },
-  id: { type: {} },
-  resourceType: String,
-  meta: {
-    versionId: String,
-    lastUpdated: Date
-  },
+const Observation = utils.extend(Base, {
   status: String,
   category: {
     coding: [{
