@@ -7,6 +7,8 @@ import Procedures from './seeders/procedures.seeder'
 import Immunizations from './seeders/immunizations.seeder'
 import MedicationOrders from './seeders/medicationOrder.seeder'
 import MedicationStatements from './seeders/medicationStatement.seeder'
+import Encounters from './seeders/encounter.seeder'
+
 mongooseLib.Promise = global.Promise
 
 // Export the mongoose lib
@@ -28,5 +30,6 @@ export const seedersList = {
   Procedures,
   Immunizations,
   MedicationOrders,
-  MedicationStatements
+  MedicationStatements,
+  Encounters
 }

@@ -22,6 +22,7 @@ import procedureRoute from './routes/procedure'
 import immunizationRoute from './routes/immunization'
 import medicationOrderRoute from './routes/medicationOrder'
 import medicationStatementRoute from './routes/medicationStatement'
+import encounterRoute from './routes/encounter'
 
 import AuthService from './services/auth.service'
 import config from './config'
@@ -54,6 +55,7 @@ app.use('/api/procedure', AuthService.checkToken, procedureRoute)
 app.use('/api/immunization', AuthService.checkToken, immunizationRoute)
 app.use('/api/medicationorder', AuthService.checkToken, medicationOrderRoute)
 app.use('/api/medicationstatement', AuthService.checkToken, medicationStatementRoute)
+app.use('/api/encounter', AuthService.checkToken, encounterRoute)
 
 app.use((req, res, next) => {
   let err = new Error('Not Found')
