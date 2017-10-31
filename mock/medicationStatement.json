@@ -1,0 +1,1159 @@
+{
+  "resourceType": "Bundle",
+  "id": "6bcd5db7-63f7-40fd-b03e-86536a1f98bd",
+  "type": "searchset",
+  "total": 11,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/MedicationStatement?patient=4342008&_count=100&status=active%2Cintended"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/22789893",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "22789893",
+        "meta": {
+          "versionId": "0",
+          "lastUpdated": "2017-10-05T16:38:11.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: Misc Prescription (Freetext Medication)</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified"
+                }
+              ],
+              "text": "Patient Specified"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "dateAsserted": "2017-10-05T09:38:08.000-07:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectivePeriod": {
+          "start": "2017-10-05T09:37:00.000-07:00"
+        },
+        "medicationCodeableConcept": {
+          "text": "Misc Prescription (Freetext Medication)"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-10-05T09:37:00.000-07:00"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/21369961",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "21369961",
+        "meta": {
+          "versionId": "0-21369979",
+          "lastUpdated": "2016-06-24T10:10:51.000-05:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: aspirin (aspirin 81 mg oral tablet)</p><p><b>Dosage Instructions</b>: 1 - 2 tabs, Oral, BID, PRN: pain | Take 1 - 2 tabs twice per day as needed, 30 tabs, 1 Refill(s)</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified"
+                }
+              ],
+              "text": "Patient Specified"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "dateAsserted": "2016-06-24T10:10:51.000-05:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectiveDateTime": "2016-06-24T10:10:51.000-05:00",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "243670",
+              "display": "Aspirin 81 MG Oral Tablet",
+              "userSelected": false
+            }
+          ],
+          "text": "aspirin (aspirin 81 mg oral tablet)"
+        },
+        "dosage": [
+          {
+            "text": "1 - 2 tabs, Oral, BID, PRN: pain | Take 1 - 2 tabs twice per day as needed, 30 tabs, 1 Refill(s)",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://localhost:3000/api/StructureDefinition/patient-friendly-display",
+                  "valueString": "1 - 2 tabs Oral 2 times a day as needed pain | Take 1 - 2 tabs twice per day as needed."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2016-06-24T08:08:00.000-07:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/GTSAbbreviation",
+                    "code": "BID",
+                    "display": "BID",
+                    "userSelected": false
+                  }
+                ],
+                "text": "BID"
+              }
+            },
+            "asNeededCodeableConcept": {
+              "text": "pain | Take 1 - 2 tabs twice per day as needed"
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "ORAL",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/22757893",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "22757893",
+        "meta": {
+          "versionId": "0-22757903",
+          "lastUpdated": "2017-09-25T12:41:43.000-05:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: atorvastatin (atorvastatin 20 mg oral tablet)</p><p><b>Dosage Instructions</b>: 20 mg, 1 tab(s), Oral, Daily, PRN: Instruct, 30 tab(s)</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified"
+                }
+              ],
+              "text": "Patient Specified"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "dateAsserted": "2017-09-25T12:41:43.000-05:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectiveDateTime": "2017-09-25T12:41:43.000-05:00",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "617310",
+              "display": "atorvastatin 20 MG Oral Tablet",
+              "userSelected": false
+            }
+          ],
+          "text": "atorvastatin (atorvastatin 20 mg oral tablet)"
+        },
+        "dosage": [
+          {
+            "text": "20 mg, 1 tab(s), Oral, Daily, PRN: Instruct, 30 tab(s)",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://localhost:3000/api/StructureDefinition/patient-friendly-display",
+                  "valueString": "1 Tabs Oral every day as needed Instruct."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-09-25T10:39:00.000-07:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/timing-abbreviation",
+                    "code": "QD",
+                    "display": "QD",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Daily"
+              }
+            },
+            "asNeededCodeableConcept": {
+              "text": "Instruct"
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "ORAL",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "quantityQuantity": {
+              "value": 1,
+              "unit": "tab(s)",
+              "system": "http://unitsofmeasure.org",
+              "code": "{tbl}"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/21369963",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "21369963",
+        "meta": {
+          "versionId": "0-21369977",
+          "lastUpdated": "2016-06-24T10:10:51.000-05:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: glyBURIDE-metformin (Glucovance 5 mg-500 mg oral tablet)</p><p><b>Dosage Instructions</b>: tabs, Oral, BID, 0 Refill(s)</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified"
+                }
+              ],
+              "text": "Patient Specified"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "dateAsserted": "2016-06-24T10:10:51.000-05:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectiveDateTime": "2016-06-24T10:10:51.000-05:00",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "861757",
+              "display": "Glyburide 5 MG / Metformin hydrochloride 500 MG Oral Tablet [Glucovance 5 MG/500 MG]",
+              "userSelected": false
+            }
+          ],
+          "text": "glyBURIDE-metformin (Glucovance 5 mg-500 mg oral tablet)"
+        },
+        "dosage": [
+          {
+            "text": "tabs, Oral, BID, 0 Refill(s)",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://localhost:3000/api/StructureDefinition/patient-friendly-display",
+                  "valueString": "Oral 2 times a day."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2016-06-24T08:08:32.000-07:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/GTSAbbreviation",
+                    "code": "BID",
+                    "display": "BID",
+                    "userSelected": false
+                  }
+                ],
+                "text": "BID"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "ORAL",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/22362015",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "22362015",
+        "meta": {
+          "versionId": "0",
+          "lastUpdated": "2017-03-21T14:58:45.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: insulin glargine</p><p><b>Dosage Instructions</b>: 10 unit(s), 0.1 mL, Subcutaneous, Daily</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "inpatient",
+                  "display": "Inpatient"
+                }
+              ],
+              "text": "Inpatient"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "informationSource": {
+           "reference": "Practitioner/4464007",
+           "display": "Portal, Portal"
+        },
+        "dateAsserted": "2017-03-21T09:57:39.000-05:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectivePeriod": {
+          "start": "2017-03-21T09:00:00.000-07:00"
+        },
+        "supportingInformation": [
+          {
+            "reference": "MedicationOrder/22362015"
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "274783",
+              "display": "Insulin Glargine",
+              "userSelected": false
+            }
+          ],
+          "text": "insulin glargine"
+        },
+        "dosage": [
+          {
+            "text": "10 unit(s), 0.1 mL, Subcutaneous, Daily",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://localhost:3000/api/StructureDefinition/patient-friendly-display",
+                  "valueString": "10 Units Subcutaneous every day. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-03-21T09:00:00.000-07:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/timing-abbreviation",
+                    "code": "QD",
+                    "display": "QD",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Daily"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38299",
+                  "display": "SUBCUTANEOUS",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "34206005",
+                  "display": "Subcutaneous route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Subcutaneous"
+            },
+            "quantityQuantity": {
+              "value": 10,
+              "unit": "unit(s)",
+              "system": "http://unitsofmeasure.org",
+              "code": "U"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/22566025",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "22566025",
+        "meta": {
+          "versionId": "0",
+          "lastUpdated": "2017-07-18T18:48:51.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: insulin isophane-insulin regular (Novolin 70/30)</p><p><b>Dosage Instructions</b>: 20 unit(s), 0.2 mL, Subcutaneous, BID</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "inpatient",
+                  "display": "Inpatient"
+                }
+              ],
+              "text": "Inpatient"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "informationSource": {
+           "reference": "Practitioner/4464007",
+           "display": "Portal, Portal"
+        },
+        "dateAsserted": "2017-07-18T13:48:34.000-05:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectivePeriod": {
+          "start": "2017-07-18T11:48:00.000-07:00"
+        },
+        "supportingInformation": [
+          {
+            "reference": "MedicationOrder/22566025"
+          }
+        ],
+        "medicationCodeableConcept": {
+          "text": "insulin isophane-insulin regular (Novolin 70/30)"
+        },
+        "dosage": [
+          {
+            "text": "20 unit(s), 0.2 mL, Subcutaneous, BID",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://localhost:3000/api/StructureDefinition/patient-friendly-display",
+                  "valueString": "20 Units Subcutaneous 2 times a day. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-07-18T11:48:00.000-07:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/GTSAbbreviation",
+                    "code": "BID",
+                    "display": "BID",
+                    "userSelected": false
+                  }
+                ],
+                "text": "BID"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38299",
+                  "display": "SUBCUTANEOUS",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "34206005",
+                  "display": "Subcutaneous route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Subcutaneous"
+            },
+            "quantityQuantity": {
+              "value": 20,
+              "unit": "unit(s)",
+              "system": "http://unitsofmeasure.org",
+              "code": "U"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/22713895",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "22713895",
+        "meta": {
+          "versionId": "0",
+          "lastUpdated": "2017-09-06T17:09:05.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: lisinopril</p><p><b>Dosage Instructions</b>: 20 mg, Oral, BID</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "inpatient",
+                  "display": "Inpatient"
+                }
+              ],
+              "text": "Inpatient"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "informationSource": {
+           "reference": "Practitioner/4464007",
+           "display": "Portal, Portal"
+        },
+        "dateAsserted": "2017-09-06T12:08:43.000-05:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectivePeriod": {
+          "start": "2017-09-06T10:08:00.000-07:00"
+        },
+        "supportingInformation": [
+          {
+            "reference": "MedicationOrder/22713895"
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "29046",
+              "display": "Lisinopril",
+              "userSelected": false
+            }
+          ],
+          "text": "lisinopril"
+        },
+        "dosage": [
+          {
+            "text": "20 mg, Oral, BID",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://localhost:3000/api/StructureDefinition/patient-friendly-display",
+                  "valueString": "20 Milligram Oral 2 times a day. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-09-06T10:08:00.000-07:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/GTSAbbreviation",
+                    "code": "BID",
+                    "display": "BID",
+                    "userSelected": false
+                  }
+                ],
+                "text": "BID"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "ORAL",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "quantityQuantity": {
+              "value": 20,
+              "unit": "mg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/22565893",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "22565893",
+        "meta": {
+          "versionId": "0",
+          "lastUpdated": "2017-07-18T18:45:53.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: metformin</p><p><b>Dosage Instructions</b>: 500 mg, 1 tabs, Oral, BID</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "inpatient",
+                  "display": "Inpatient"
+                }
+              ],
+              "text": "Inpatient"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "informationSource": {
+           "reference": "Practitioner/4464007",
+           "display": "Portal, Portal"
+        },
+        "dateAsserted": "2017-07-18T13:44:26.000-05:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectivePeriod": {
+          "start": "2017-07-18T11:44:00.000-07:00"
+        },
+        "supportingInformation": [
+          {
+            "reference": "MedicationOrder/22565893"
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "6809",
+              "display": "Metformin",
+              "userSelected": false
+            }
+          ],
+          "text": "metformin"
+        },
+        "dosage": [
+          {
+            "text": "500 mg, 1 tabs, Oral, BID",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://localhost:3000/api/StructureDefinition/patient-friendly-display",
+                  "valueString": "500 Milligram Oral 2 times a day. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-07-18T11:44:00.000-07:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/GTSAbbreviation",
+                    "code": "BID",
+                    "display": "BID",
+                    "userSelected": false
+                  }
+                ],
+                "text": "BID"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "ORAL",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "quantityQuantity": {
+              "value": 500,
+              "unit": "mg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/22769917",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "22769917",
+        "meta": {
+          "versionId": "0",
+          "lastUpdated": "2017-09-28T15:37:10.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: metformin-pioglitazone</p><p><b>Dosage Instructions</b>: 35 mg, Oral, Daily</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "inpatient",
+                  "display": "Inpatient"
+                }
+              ],
+              "text": "Inpatient"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "informationSource": {
+           "reference": "Practitioner/4464007",
+           "display": "Portal, Portal"
+        },
+        "dateAsserted": "2017-09-28T10:36:12.000-05:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectivePeriod": {
+          "start": "2017-09-28T09:00:00.000-07:00"
+        },
+        "supportingInformation": [
+          {
+            "reference": "MedicationOrder/22769917"
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "607999",
+              "display": "Metformin / pioglitazone",
+              "userSelected": false
+            }
+          ],
+          "text": "metformin-pioglitazone"
+        },
+        "dosage": [
+          {
+            "text": "35 mg, Oral, Daily",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://localhost:3000/api/StructureDefinition/patient-friendly-display",
+                  "valueString": "35 Milligram Oral every day. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-09-28T09:00:00.000-07:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/timing-abbreviation",
+                    "code": "QD",
+                    "display": "QD",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Daily"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "ORAL",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "quantityQuantity": {
+              "value": 35,
+              "unit": "mg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/21369989",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "21369989",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2017-05-26T19:54:59.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: morphine (morphine 24 hour extended release)</p><p><b>Dosage Instructions</b>: 30 mg, 1 caps, Oral, Daily, PRN: pain</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "inpatient",
+                  "display": "Inpatient"
+                }
+              ],
+              "text": "Inpatient"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "informationSource": {
+           "reference": "Practitioner/4464007",
+           "display": "Portal, Portal"
+        },
+        "dateAsserted": "2016-06-24T10:24:14.000-05:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectivePeriod": {
+          "start": "2016-06-24T08:24:00.000-07:00"
+        },
+        "supportingInformation": [
+          {
+            "reference": "MedicationOrder/21369989"
+          }
+        ],
+        "medicationCodeableConcept": {
+          "text": "morphine (morphine 24 hour extended release)"
+        },
+        "dosage": [
+          {
+            "text": "30 mg, 1 caps, Oral, Daily, PRN: pain",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://localhost:3000/api/StructureDefinition/patient-friendly-display",
+                  "valueString": "30 Milligram Oral every day as needed For Pain. Refills: 2."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2016-06-24T08:24:00.000-07:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/timing-abbreviation",
+                    "code": "QD",
+                    "display": "QD",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Daily"
+              }
+            },
+            "asNeededCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "22253000",
+                  "display": "pain (finding)",
+                  "userSelected": false
+                }
+              ],
+              "text": "pain"
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "ORAL",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "quantityQuantity": {
+              "value": 30,
+              "unit": "mg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/MedicationStatement/21369987",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "21369987",
+        "meta": {
+          "versionId": "0",
+          "lastUpdated": "2016-06-24T15:27:05.000Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div><p><b>Medication Statement</b></p><p><b>Patient Name</b>: FISHER, FLYNNE</p><p><b>Medication Name</b>: oxycodone (oxycodone extended release)</p><p><b>Dosage Instructions</b>: 80 mg, 2 tabs, Oral, q12hr, PRN: pain</p><p><b>Status</b>: Active</p><p><b>Taken</b>: Yes</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://localhost:3000/api/StructureDefinition/medication-statement-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-statement-category",
+                  "code": "inpatient",
+                  "display": "Inpatient"
+                }
+              ],
+              "text": "Inpatient"
+            }
+          }
+        ],
+        "patient": {
+         "reference": "Patient/5566778899",
+         "display": "FISHER, FLYNNE"
+        },
+        "informationSource": {
+           "reference": "Practitioner/4464007",
+           "display": "Portal, Portal"
+        },
+        "dateAsserted": "2016-06-24T10:23:40.000-05:00",
+        "status": "active",
+        "wasNotTaken": false,
+        "effectivePeriod": {
+          "start": "2016-06-24T08:24:00.000-07:00"
+        },
+        "supportingInformation": [
+          {
+            "reference": "MedicationOrder/21369987"
+          }
+        ],
+        "medicationCodeableConcept": {
+          "text": "oxycodone (oxycodone extended release)"
+        },
+        "dosage": [
+          {
+            "text": "80 mg, 2 tabs, Oral, q12hr, PRN: pain",
+            "_text": {
+              "extension": [
+                {
+                  "url": "http://localhost:3000/api/StructureDefinition/patient-friendly-display",
+                  "valueString": "80 Milligram Oral every 12 hours as needed For Pain. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2016-06-24T08:24:00.000-07:00"
+                }
+              },
+              "code": {
+                "text": "q12hr"
+              }
+            },
+            "asNeededCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "22253000",
+                  "display": "pain (finding)",
+                  "userSelected": false
+                }
+              ],
+              "text": "pain"
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "ORAL",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "quantityQuantity": {
+              "value": 80,
+              "unit": "mg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
