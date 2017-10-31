@@ -1,15 +1,10 @@
-import _ from 'lodash'
 import Allergy from '../models/allergy'
+import BaseService from './base.service'
 
-class AllergyService {
+class AllergyService extends BaseService {
   get (patientId) {
     const reg = 'Patient/' + patientId
-    return Allergy.find({'patient.reference': reg}).then(result => {
-      // TODO: Look into the right way to bundle this
-      return {
-        entry: _.map(result, (re) => { return { resource: re } })
-      }
-    })
+    return super.request(Allergy, {'patient.reference': reg})
   }
 }
 

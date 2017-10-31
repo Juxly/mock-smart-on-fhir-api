@@ -1,18 +1,15 @@
 import _ from 'lodash'
 import shortid from 'shortid'
 import Condition from '../models/condition'
+import BaseService from './base.service'
 
-class ConditionService {
+class ConditionService extends BaseService {
   get (patientId, clinicalStatusParam) {
     if (!clinicalStatusParam) clinicalStatusParam = 'active,resolved,remission'
     var clinicalStatus = _.split(clinicalStatusParam, ',')
     const reg = 'Patient/' + patientId
-    return Condition.find({'patient.reference': reg, 'clinicalStatus': { $in: clinicalStatus }, 'verificationStatus': { $ne: 'entered-in-error' }}).then(result => {
-      // TODO: Look into the right way to bundle this
-      return {
-        entry: _.map(result, (re) => { return { resource: re } })
-      }
-    })
+    const request = {'patient.reference': reg, 'clinicalStatus': { $in: clinicalStatus }, 'verificationStatus': { $ne: 'entered-in-error' }}
+    return super.request(Condition, request)
   }
 
   save (condition) {
