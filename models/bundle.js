@@ -18,27 +18,29 @@ export default class Bundle {
 
   createLink (data, request, total) {
     const hex = !request ? '' : engine.encrypt(request)
-    const direction = request['-pageDirection'] || 'NEXT'
-    let prev = {}
-    let next = {}
-    const reqTotal = request._page * request._count
-    const baseUrl = [request.protocol, '://', request.host, ':', request.port, request.originalUrl, '?patient=', request.patientId].join('')
-    const s = {
-      link: 'self',
-      url: [baseUrl, '&-pageDirection=', direction, '&-pageContext=', hex].join('')
-    }
-    if (total > reqTotal) {
-      next = {
-        link: 'next',
-        url: [baseUrl, '&-pageDirection=', 'NEXT', '&-pageContext=', hex].join('')
+    if (request) {
+      let prev = {}
+      let next = {}
+      const direction = request['-pageDirection'] || 'NEXT'
+      const reqTotal = request._page * request._count
+      const baseUrl = [request.protocol, '://', request.host, ':', request.port, request.originalUrl, '?patient=', request.patientId].join('')
+      const s = {
+        link: 'self',
+        url: [baseUrl, '&-pageDirection=', direction, '&-pageContext=', hex].join('')
       }
-    } else if (request._page !== 0) {
-      prev = {
-        link: 'previous',
-        url: [baseUrl, '&-pageDirection=', 'PREVIOUS', '&-pageContext=', hex].join('')
+      if (total > reqTotal) {
+        next = {
+          link: 'next',
+          url: [baseUrl, '&-pageDirection=', 'NEXT', '&-pageContext=', hex].join('')
+        }
+      } else if (request._page !== 0) {
+        prev = {
+          link: 'previous',
+          url: [baseUrl, '&-pageDirection=', 'PREVIOUS', '&-pageContext=', hex].join('')
+        }
       }
-    }
-    return [s, prev, next]
+      return [s, prev, next]
+    } else return {}
   }
 
   guid () {

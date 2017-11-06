@@ -3,7 +3,7 @@ import Observation from '../models/observation'
 import Bundle from '../models/bundle'
 import encrypter from 'object-encrypter'
 const engine = encrypter(process.env.SECRET, {outputEncoding: 'hex'})
-const COUNT = 1
+const COUNT = 100
 
 class ObervationService {
   get (req) {

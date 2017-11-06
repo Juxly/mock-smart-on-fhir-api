@@ -1,0 +1,154 @@
+{
+  "resourceType": "Bundle",
+  "id": "367935d3-ef1f-416a-b545-720d58b56b78",
+  "type": "searchset",
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/DiagnosticReport?patient=4342008&_count=100"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/DiagnosticReport/7211539",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "7211539",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2017-10-25T13:26:05.000Z"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div><p><b>Diagnostic Report</b></p><p><b>Document Type</b>: CT Report</p><p><b>Document Title</b>: 2 COl Template</p><p><b>Status</b>: Final</p><p><b>Verifying Provider</b>: PORTAL, PORTAL</p></div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0074",
+              "code": "RAD",
+              "display": "Radiology",
+              "userSelected": false
+            }
+          ],
+          "text": "CT Report"
+        },
+        "code": {
+          "text": "CT Report"
+        },
+        "subject": {
+          "reference": "Patient/5566778899",
+          "display": "FISHER, FLYNNE"
+        },
+        "encounter": {
+          "reference": "Encounter/4269906"
+        },
+        "effectiveDateTime": "2017-10-25T12:00:00.000Z",
+        "issued": "2017-10-25T13:26:05.000Z",
+        "performer": {
+          "reference": "Practitioner/4464007",
+          "display": "PORTAL, PORTAL"
+        },
+        "presentedForm": [
+          {
+            "contentType": "text/html",
+            "url": "http://localhost:3000/api/Binary/TR-7211539"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/DiagnosticReport/6445372",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "6445372",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2016-06-24T16:56:58.000Z"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div><p><b>Diagnostic Report</b></p><p><b>Document Type</b>: RADRPT</p><p><b>Document Title</b>: CT Pelvis w/o Contrast</p><p><b>Status</b>: Final</p><p><b>Verifying Provider</b>: PORTAL, PORTAL</p><p><b>Ordering Provider</b>: <ul><li>PORTAL, PORTAL</li></ul></p></div>"
+        },
+        "status": "final",
+        "category": {
+          "text": "RADRPT"
+        },
+        "code": {
+          "text": "RADRPT"
+        },
+        "subject": {
+          "reference": "Patient/5566778899",
+          "display": "FISHER, FLYNNE"
+        },
+        "encounter": {
+          "reference": "Encounter/4027906"
+        },
+        "effectiveDateTime": "2016-06-24T16:53:21.000Z",
+        "issued": "2016-06-24T16:56:53.000Z",
+        "performer": {
+          "reference": "Practitioner/4464007",
+          "display": "PORTAL, PORTAL"
+        },
+        "request": [
+          {
+            "reference": "DiagnosticOrder/21373945"
+          }
+        ],
+        "presentedForm": [
+          {
+            "contentType": "text/html",
+            "url": "http://localhost:3000/api/Binary/TR-6445372"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/DiagnosticReport/6445384",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "6445384",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2016-06-24T16:57:48.000Z"
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div><p><b>Diagnostic Report</b></p><p><b>Document Type</b>: RADRPT</p><p><b>Document Title</b>: XR Chest 2 Views</p><p><b>Status</b>: Final</p><p><b>Verifying Provider</b>: PORTAL, PORTAL</p><p><b>Ordering Provider</b>: <ul><li>PORTAL, PORTAL</li></ul></p></div>"
+        },
+        "status": "final",
+        "category": {
+          "text": "RADRPT"
+        },
+        "code": {
+          "text": "RADRPT"
+        },
+        "subject": {
+          "reference": "Patient/5566778899",
+          "display": "FISHER, FLYNNE"
+        },
+        "encounter": {
+          "reference": "Encounter/4027906"
+        },
+        "effectiveDateTime": "2016-06-24T16:52:01.000Z",
+        "issued": "2016-06-24T16:57:46.000Z",
+        "performer": {
+          "reference": "Practitioner/4464007",
+          "display": "PORTAL, PORTAL"
+        },
+        "request": [
+          {
+            "reference": "DiagnosticOrder/21373943"
+          }
+        ],
+        "presentedForm": [
+          {
+            "contentType": "text/html",
+            "url": "http://localhost:3000/api/Binary/TR-6445384"
+          }
+        ]
+      }
+    }
+  ]
+}
