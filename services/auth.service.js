@@ -22,6 +22,7 @@ class AuthService {
     let context = {...code.context,
       encounter: '123456789',
       patient: '5566778899',
+      // patient: '4754012',
       user: '987654321'
     }
     let token = {...context,
@@ -30,7 +31,8 @@ class AuthService {
       scope: code.scope,
       client_id: clientId
     }
-    token.access_token = jwt.sign({...token}, config.key, { algorithm: 'RS256', expiresIn: '10m' })
+    const tokenExpire = String(config.tokenExpire)
+    token.access_token = jwt.sign({...token}, config.key, { algorithm: 'RS256', expiresIn: `${tokenExpire}m` })
     token.refresh_token = randtoken.uid(256)
     token.id_token = jwt.sign(this._createOpenID(), config.key, {algorithm: 'RS256', keyid: '1'})
     this.refreshTokens[token.refresh_token] = token
