@@ -57,6 +57,11 @@ const Observation = utils.extend(Base, {
   },
   encounter: {
     reference: String
-  }
+  },
+  related: [{
+    target: {
+      reference: String
+    }
+  }]
 })
 module.exports = mongoose.model('Observation', Observation)

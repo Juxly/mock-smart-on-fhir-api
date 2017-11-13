@@ -45,7 +45,7 @@
      "text": "Pulse"
     },
     "subject": {
-     "reference": "Patient/4342008"
+     "reference": "Patient/5566778899"
     },
     "encounter": {
      "reference": "Encounter/4027906"
@@ -121,7 +121,7 @@
      "text": "Blood pressure"
     },
     "subject": {
-     "reference": "Patient/4342008"
+     "reference": "Patient/5566778899"
     },
     "encounter": {
      "reference": "Encounter/4027906"
@@ -251,7 +251,7 @@
      "text": "LDL"
     },
     "subject": {
-     "reference": "Patient/4342008"
+     "reference": "Patient/5566778899"
     },
     "encounter": {
      "reference": "Encounter/4027906"
@@ -323,7 +323,7 @@
      "text": "Glucose Lvl"
     },
     "subject": {
-     "reference": "Patient/4342008"
+     "reference": "Patient/5566778899"
     },
     "encounter": {
      "reference": "Encounter/4027906"
@@ -399,12 +399,103 @@
      "text": "Tobacco"
     },
     "subject": {
-     "reference": "Patient/4342008"
+     "reference": "Patient/5566778899"
     },
     "valueCodeableConcept": {
-     "text": "Denies Tobacco Use"
-    }
+      "text": "Medium Risk"
+    },
+    "related": [
+      {
+        "type": "has-member",
+        "target": {
+          "reference": "Observation/7050369-q6930400"
+        }
+      },
+      {
+        "type": "has-member",
+        "target": {
+          "reference": "Observation/7050369-q6930404"
+        }
+      }
+    ]
    }
+  },
+  {
+    "fullUrl": "http://localhost:3000/api/Observation/7050369-q6930400",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7050369-q6930400",
+      "meta": {
+        "versionId": "7050369",
+        "lastUpdated": "2017-08-04T15:26:40.000Z"
+      },
+      "status": "final",
+      "category": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/observation-category",
+            "code": "social-history",
+            "display": "Social History"
+          }
+        ],
+        "text": "Social History"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "72166-2"
+          }
+        ],
+        "text": "SHX Tobacco use"
+      },
+      "subject": {
+        "reference": "Patient/5566778899"
+      },
+      "issued": "2017-08-04T15:26:40.000Z",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "428041000124106",
+            "display": "Occasional tobacco smoker (finding)"
+          }
+        ],
+        "text": "Current some day smoker"
+      }
+    }
+  },
+  {
+    "fullUrl": "http://localhost:3000/api/Observation/7050369-q6930404",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7050369-q6930404",
+      "meta": {
+        "versionId": "7050369",
+        "lastUpdated": "2017-08-04T15:26:40.000Z"
+      },
+      "status": "final",
+      "category": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/observation-category",
+            "code": "social-history",
+            "display": "Social History"
+          }
+        ],
+        "text": "Social History"
+      },
+      "code": {
+        "text": "SHX Tobacco type"
+      },
+      "subject": {
+        "reference": "Patient/5566778899"
+      },
+      "issued": "2017-08-04T15:26:40.000Z",
+      "valueCodeableConcept": {
+        "text": "Cigarettes"
+      }
+    }
   }
  ]
 }

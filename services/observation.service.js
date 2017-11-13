@@ -19,8 +19,6 @@ class ObervationService {
     }
 
     return promise.then(result => {
-      // requestObject._page++
-      // requestObject._count = COUNT * requestObject._page
       return new Bundle(result, requestObject)
     })
   }
@@ -42,6 +40,7 @@ class ObervationService {
   }
 
   _getByCategory (patientId, request) {
+    if (!request._page) request._page = 0
     const catArray = _.compact(request.category.replace('http://hl7.org/fhir/observation-category', '').split('|'))
     const catRequest = { 'category.coding.code': { $in: catArray } }
     return Observation.find(catRequest).skip(COUNT * request._page)
