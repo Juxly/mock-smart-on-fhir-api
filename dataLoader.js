@@ -83,3 +83,9 @@ downloadPromise.then(() => {
     return process.exit()
   })
 })
+
+// Run this command after import
+// db.observations.find().forEach(function(el){
+//   el.effectiveDateTime = new Date(el.effectiveDateTime);
+//     db.observations.save(el)
+// });

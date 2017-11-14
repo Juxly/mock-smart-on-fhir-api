@@ -46,6 +46,7 @@ class ObervationService {
     let catRequest = { 'category.coding.code': { $in: catArray }, effectiveDateTime: { $gt: Utils.minDate() } }
     if (request.$gt) catRequest.effectiveDateTime.$gt = request.$gt
     if (request.$lte) catRequest.effectiveDateTime.$lte = request.$lte
+    catRequest.subject = { reference: patientId }
     return Observation.find(catRequest).skip(COUNT * request._page)
       .limit(COUNT).then(data => {
         return Observation.count(catRequest).then(count => {

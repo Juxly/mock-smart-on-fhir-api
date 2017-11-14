@@ -48,7 +48,7 @@
      "reference": "Patient/5566778899"
     },
     "encounter": {
-     "reference": "Encounter/4027906"
+     "reference": "Encounter/123456789"
     },
     "effectiveDateTime": "2017-06-24T16:10:00.000Z",
     "issued": "2017-06-24T16:10:37.000Z",
@@ -124,7 +124,7 @@
      "reference": "Patient/5566778899"
     },
     "encounter": {
-     "reference": "Encounter/4027906"
+     "reference": "Encounter/123456789"
     },
     "effectiveDateTime": "2017-06-24T16:10:00.000Z",
     "issued": "2017-06-24T16:10:37.000Z",
@@ -254,7 +254,7 @@
      "reference": "Patient/5566778899"
     },
     "encounter": {
-     "reference": "Encounter/4027906"
+     "reference": "Encounter/123456789"
     },
     "effectiveDateTime": "2016-06-24T18:32:00.000Z",
     "issued": "2016-06-24T18:35:07.000Z",
@@ -326,7 +326,7 @@
      "reference": "Patient/5566778899"
     },
     "encounter": {
-     "reference": "Encounter/4027906"
+     "reference": "Encounter/123456789"
     },
     "effectiveDateTime": "2017-03-21T13:33:00.000Z",
     "issued": "2017-03-21T14:49:52.000Z",

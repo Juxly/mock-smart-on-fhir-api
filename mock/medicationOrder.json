@@ -222,7 +222,7 @@
          "display": "Portal, Portal"
         },
         "encounter": {
-          "reference": "Encounter/4269906"
+          "reference": "Encounter/123456789"
         },
         "medicationCodeableConcept": {
           "coding": [
@@ -418,7 +418,7 @@
          "display": "Portal, Portal"
         },
         "encounter": {
-          "reference": "Encounter/4269906"
+          "reference": "Encounter/123456789"
         },
         "medicationCodeableConcept": {
           "coding": [

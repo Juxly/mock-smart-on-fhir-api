@@ -1,15 +1,17 @@
 import jwt from 'jsonwebtoken'
+import encrypter from 'object-encrypter'
 import randtoken from 'rand-token'
 import config from '../config'
+const engine = encrypter(process.env.SECRET, {outputEncoding: 'hex'})
 
 class AuthService {
   constructor () {
     this.refreshTokens = {}
   }
   authorize (req) {
-    const incomingJwt = req.query.launch && req.query.launch.replace(/=/g, '')
+    const launch = req.query.launch && req.query.launch.replace(/=/g, '')
     const code = {
-      context: incomingJwt ? jwt.decode(incomingJwt) : {},
+      context: launch ? engine.decrypt(launch) : {},
       client_id: req.query.client_id,
       scope: req.query.scope
     }
@@ -19,12 +21,8 @@ class AuthService {
   }
 
   createToken (code, clientId) {
-    let context = {...code.context,
-      encounter: '123456789',
-      patient: '5566778899',
-      // patient: '4754012',
-      user: '987654321'
-    }
+    let context = {...code.context}
+    if (!context.patient) context.patient = '5566778899'
     let token = {...context,
       token_type: 'bearer',
       expires_in: 3600,

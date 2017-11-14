@@ -11,10 +11,10 @@
  ],
  "entry": [
   {
-   "fullUrl": "http://localhost:3000/api/Encounter/4269906",
+   "fullUrl": "http://localhost:3000/api/Encounter/123456789",
    "resource": {
     "resourceType": "Encounter",
-    "id": "4269906",
+    "id": "123456789",
     "meta": {
      "versionId": "1",
      "lastUpdated": "2017-06-27T17:28:06.000Z"
