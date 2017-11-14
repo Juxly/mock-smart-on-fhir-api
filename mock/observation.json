@@ -16,7 +16,7 @@
     "id": "M6445347",
     "meta": {
      "versionId": "1-6445346",
-     "lastUpdated": "2016-06-24T16:12:57.000Z"
+     "lastUpdated": "2017-06-24T16:12:57.000Z"
     },
     "status": "final",
     "category": {
@@ -50,8 +50,8 @@
     "encounter": {
      "reference": "Encounter/4027906"
     },
-    "effectiveDateTime": "2016-06-24T16:10:00.000Z",
-    "issued": "2016-06-24T16:10:37.000Z",
+    "effectiveDateTime": "2017-06-24T16:10:00.000Z",
+    "issued": "2017-06-24T16:10:37.000Z",
     "valueQuantity": {
      "value": 85,
      "unit": "bpm",
@@ -92,7 +92,7 @@
     "id": "BP-6445337-6445339",
     "meta": {
      "versionId": "1-6445336-1-6445338",
-     "lastUpdated": "2016-06-24T16:12:57.000Z"
+     "lastUpdated": "2017-06-24T16:12:57.000Z"
     },
     "status": "final",
     "category": {
@@ -126,8 +126,8 @@
     "encounter": {
      "reference": "Encounter/4027906"
     },
-    "effectiveDateTime": "2016-06-24T16:10:00.000Z",
-    "issued": "2016-06-24T16:10:37.000Z",
+    "effectiveDateTime": "2017-06-24T16:10:00.000Z",
+    "issued": "2017-06-24T16:10:37.000Z",
     "interpretation": {
      "coding": [
       {

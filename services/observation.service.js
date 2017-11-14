@@ -1,6 +1,7 @@
 import _ from 'lodash'
 import Observation from '../models/observation'
 import Bundle from '../models/bundle'
+import Utils from '../models/utils'
 import encrypter from 'object-encrypter'
 const engine = encrypter(process.env.SECRET, {outputEncoding: 'hex'})
 const COUNT = 100
@@ -42,7 +43,9 @@ class ObervationService {
   _getByCategory (patientId, request) {
     if (!request._page) request._page = 0
     const catArray = _.compact(request.category.replace('http://hl7.org/fhir/observation-category', '').split('|'))
-    const catRequest = { 'category.coding.code': { $in: catArray } }
+    let catRequest = { 'category.coding.code': { $in: catArray }, effectiveDateTime: { $gt: Utils.minDate() } }
+    if (request.$gt) catRequest.effectiveDateTime.$gt = request.$gt
+    if (request.$lte) catRequest.effectiveDateTime.$lte = request.$lte
     return Observation.find(catRequest).skip(COUNT * request._page)
       .limit(COUNT).then(data => {
         return Observation.count(catRequest).then(count => {
@@ -70,6 +73,7 @@ class ObervationService {
       request._count = COUNT
       request._page = 0
     }
+    if (query.date) Object.assign(request, Utils.dateFromQuery(query.date))
     return request
   }
 }
