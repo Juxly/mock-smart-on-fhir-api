@@ -16,6 +16,7 @@ import patient from './routes/patient'
 import condition from './routes/condition'
 import observation from './routes/observation'
 import openid from './routes/openid'
+import contexts from './routes/contexts'
 import documentRoute from './routes/document'
 import allergyRoute from './routes/allergyintolerance'
 import procedureRoute from './routes/procedure'
@@ -47,6 +48,7 @@ app.use('/', routes)
 app.use('/api/oauth', auth)
 app.use('/api/metadata', metadata)
 app.use('/api/openid', openid)
+app.use('/api/contexts', contexts)
 app.use('/api/patient', AuthService.checkToken, patient)
 app.use('/api/condition', AuthService.checkToken, condition)
 app.use('/api/observation', AuthService.checkToken, observation)

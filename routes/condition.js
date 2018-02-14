@@ -13,7 +13,12 @@ router.post('/', function (req, res) {
 })
 
 router.put('/:id', function (req, res) {
-  return _save(req, res)
+  return ConditionService.getById(req.params.id).then(existing => {
+    if (!existing || existing.entry[0].resource.meta.versionId !== req.body.meta.versionId) {
+      return res.status(409).send('Current state of resource is conflict')
+    }
+    return _save(req, res)
+  })
 })
 
 function _save (req, res) {
