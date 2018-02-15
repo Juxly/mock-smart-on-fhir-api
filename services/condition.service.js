@@ -33,6 +33,10 @@ class ConditionService extends BaseService {
     if (!condition.id) {
       condition.id = shortid.generate().toLowerCase()
       delete condition.__v
+      condition.meta = {
+        versionId: 0,
+        lastUpdated: new Date()
+      }
     } else {
       condition.__v = Number(condition.meta.versionId) + 1
       condition.meta.versionId = condition.__v
@@ -44,7 +48,7 @@ class ConditionService extends BaseService {
       'new': true
     }).then(result => {
       result.meta = {
-        versionId: result.__v,
+        versionId: result.__v ? result.__v : 0,
         lastUpdated: new Date()
       }
       return result
