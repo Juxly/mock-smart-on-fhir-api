@@ -32,7 +32,7 @@ class ConditionService extends BaseService {
     delete condition._id
     if (!condition.id) {
       condition.id = shortid.generate().toLowerCase()
-      condition.__v = 0
+      delete condition.__v
     } else {
       condition.__v = Number(condition.meta.versionId) + 1
       condition.meta.versionId = condition.__v
