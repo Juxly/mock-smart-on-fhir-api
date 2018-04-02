@@ -25,6 +25,7 @@ import medicationOrderRoute from './routes/medicationOrder'
 import medicationStatementRoute from './routes/medicationStatement'
 import encounterRoute from './routes/encounter'
 import diagnosticRoute from './routes/diagnosticReport'
+import practitionerRoute from './routes/practitioner'
 
 import AuthService from './services/auth.service'
 import config from './config'
@@ -60,6 +61,7 @@ app.use('/api/medicationorder', AuthService.checkToken, medicationOrderRoute)
 app.use('/api/medicationstatement', AuthService.checkToken, medicationStatementRoute)
 app.use('/api/encounter', AuthService.checkToken, encounterRoute)
 app.use('/api/diagnosticreport', AuthService.checkToken, diagnosticRoute)
+app.use('/api/practitioner', AuthService.checkToken, practitionerRoute)
 
 app.use((req, res, next) => {
   let err = new Error('Not Found')

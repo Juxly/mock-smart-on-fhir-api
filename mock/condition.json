@@ -170,8 +170,8 @@
      "display": "FISHER, FLYNNE"
     },
     "asserter": {
-     "reference": "Practitioner/4464007",
-     "display": "Portal, Portal"
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
     },
     "dateRecorded": "2017-06-05",
     "code": {
@@ -218,8 +218,8 @@
      "reference": "Encounter/123456789"
     },
     "asserter": {
-     "reference": "Practitioner/4464007",
-     "display": "Portal, Portal"
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
     },
     "dateRecorded": "2017-06-05",
     "code": {
@@ -265,8 +265,8 @@
      "reference": "Encounter/123456789"
     },
     "asserter": {
-     "reference": "Practitioner/4464007",
-     "display": "Portal, Portal"
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
     },
     "dateRecorded": "2017-02-22",
     "code": {
@@ -303,8 +303,8 @@
      "reference": "Encounter/123456789"
     },
     "asserter": {
-     "reference": "Practitioner/4464007",
-     "display": "Portal, Portal"
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
     },
     "dateRecorded": "2017-03-08",
     "code": {
@@ -338,8 +338,8 @@
      "display": "FISHER, FLYNNE"
     },
     "asserter": {
-     "reference": "Practitioner/1912007",
-     "display": "McCurdy, Michael"
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
     },
     "dateRecorded": "2016-06-24",
     "code": {
@@ -356,6 +356,147 @@
      "text": "Problem"
     },
     "clinicalStatus": "remission",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "1989",
+    "abatementBoolean": false
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/d36634600",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "d36634600",
+    "meta": {
+     "versionId": "6917893",
+     "lastUpdated": "2017-05-18T21:53:21.000Z"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2017-06-24",
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "T14.91",
+       "display": "Suicide Attempt",
+       "userSelected": false
+      }
+     ],
+     "text": "Suicide Attempt"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "encounter": {
+     "reference": "Encounter/123456790"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "1989",
+    "abatementBoolean": false
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/bjkw27kcc",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "bjkw27kcc",
+    "meta": {
+     "versionId": "1",
+     "lastUpdated": "2017-05-18T21:53:21.000Z"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2018-01-02",
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "I70.1",
+       "display": "Atherosclerosis of renal artery",
+       "userSelected": false
+      }
+     ],
+     "text": "Atherosclerosis of renal artery"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "encounter": {
+     "reference": "Encounter/123456791"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "1989",
+    "abatementBoolean": false
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/bjkw2776e",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "bjkw2776e",
+    "meta": {
+     "versionId": "1",
+     "lastUpdated": "2017-05-18T21:53:21.000Z"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2015-01-02",
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "E70.30",
+       "display": "Albinism, unspecified",
+       "userSelected": false
+      }
+     ],
+     "text": "Albinism, unspecified"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://argonaut.hl7.org",
+       "code": "problem",
+       "display": "Problem"
+      }
+     ],
+     "text": "Problem"
+    },
+    "clinicalStatus": "active",
     "verificationStatus": "confirmed",
     "onsetDateTime": "1989",
     "abatementBoolean": false
