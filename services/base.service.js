@@ -1,4 +1,4 @@
-import Bundle from '../models/Bundle'
+import Bundle from '../models/bundle'
 
 export default class BaseService {
   request (model, criteria, func = 'find') {
