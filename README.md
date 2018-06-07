@@ -29,7 +29,7 @@ openssl genrsa -out pubpriv.pem 1024
 
 openssl rsa -in pubpriv.pem -pubout -out pubkey.pem
 
-openssl rsa -outform pem -in pubpriv.pem -out private.key
+openssl rsa -in pubpriv.pem -out private.key
 
 ### To get modulus/exponent from public key
 openssl rsa -pubin -inform PEM -text -noout < pubkey.pem
