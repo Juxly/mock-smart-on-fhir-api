@@ -114,6 +114,62 @@
    }
   },
   {
+   "fullUrl": "http://localhost:3000/api/Condition/p6917903",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "p6917903",
+    "meta": {
+     "versionId": "6917903",
+     "lastUpdated": "2017-05-18T21:56:33.000Z"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2017-08-18",
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "E66.01",
+       "display": "Morbid (severe) obesity due to excess calories",
+       "userSelected": false
+      }
+     ],
+     "text": "Morbid (severe) obesity due to excess calories"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "Diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "severity": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "24484000",
+       "display": "Severe",
+       "userSelected": false
+      }
+     ],
+     "text": "Severe"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "1978",
+    "abatementBoolean": false
+   }
+  },
+  {
    "fullUrl": "http://localhost:3000/api/Condition/p6745861",
    "resource": {
     "resourceType": "Condition",
@@ -500,6 +556,399 @@
     "verificationStatus": "confirmed",
     "onsetDateTime": "1989",
     "abatementBoolean": false
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/p144531677",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "p144531677",
+    "meta": {
+     "versionId": "144534939",
+     "lastUpdated": "2018-03-27T17:31:53.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: CISTEST, BRIAN</p><p><b>Problem</b>: Diabetes, Diabetes mellitus (disorder)</p><p><b>Clinical Status</b>: Active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Resolved</b>: false</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2018-03-27",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "73211009",
+       "display": "Diabetes mellitus (disorder)",
+       "userSelected": true
+      },
+      {
+       "system": "http://snomed.info/sct",
+       "code": "73211009",
+       "display": "Diabetes mellitus (disorder)",
+       "userSelected": false
+      }
+     ],
+     "text": "Diabetes"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://argonaut.hl7.org",
+       "code": "problem",
+       "display": "Problem"
+      }
+     ],
+     "text": "Problem"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "abatementBoolean": false
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/d4699832971",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "d4699832971",
+    "meta": {
+     "versionId": "4699838759",
+     "lastUpdated": "2018-03-27T17:31:54.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: CISTEST, BRIAN</p><p><b>Diagnosis</b>: Diabetes, Diabetes mellitus (disorder)</p><p><b>Clinical Status</b>: active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2018-03-27T17:19:00.000Z</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "encounter": {
+     "reference": "Encounter/123456789"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2018-03-27",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "73211009",
+       "display": "Diabetes mellitus (disorder)",
+       "userSelected": true
+      },
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "E11.9",
+       "display": "Type 2 diabetes mellitus without complications",
+       "userSelected": false
+      }
+     ],
+     "text": "Diabetes"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "2018-03-27T17:19:00.000Z"
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/p137345207",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "p137345207",
+    "meta": {
+     "versionId": "139057487",
+     "lastUpdated": "2018-02-01T23:15:06.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: CISTEST, BRIAN</p><p><b>Problem</b>: Type 2 diabetes mellitus, Diabetes mellitus type 2 (disorder)</p><p><b>Clinical Status</b>: Resolved</p><p><b>Verification Status</b>: Confirmed</p><p><b>Resolved</b>: 2018-01-17</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2018-01-17",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "44054006",
+       "display": "Diabetes mellitus type 2 (disorder)",
+       "userSelected": true
+      },
+      {
+       "system": "http://snomed.info/sct",
+       "code": "44054006",
+       "display": "Diabetes mellitus type 2 (disorder)",
+       "userSelected": false
+      }
+     ],
+     "text": "Type 2 diabetes mellitus"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://argonaut.hl7.org",
+       "code": "problem",
+       "display": "Problem"
+      }
+     ],
+     "text": "Problem"
+    },
+    "clinicalStatus": "resolved",
+    "verificationStatus": "confirmed",
+    "abatementDateTime": "2018-01-17"
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/d4728325003",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "d4728325003",
+    "meta": {
+     "versionId": "4728325003",
+     "lastUpdated": "2018-04-06T15:27:53.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: CISTEST, BRIAN</p><p><b>Diagnosis</b>: Diabetes mellitus, type 2, Diabetes mellitus type 2 (disorder)</p><p><b>Clinical Status</b>: active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2018-03-05T19:46:00.000Z</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "encounter": {
+     "reference": "Encounter/71617652"
+    },
+    "dateRecorded": "2018-04-06",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "44054006",
+       "display": "Diabetes mellitus type 2 (disorder)",
+       "userSelected": true
+      },
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "E11.9",
+       "display": "Type 2 diabetes mellitus without complications",
+       "userSelected": false
+      }
+     ],
+     "text": "Diabetes mellitus, type 2"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "2018-03-05T19:46:00.000Z"
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/d4728324913",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "d4728324913",
+    "meta": {
+     "versionId": "4728324913",
+     "lastUpdated": "2018-04-06T13:45:11.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: CISTEST, BRIAN</p><p><b>Diagnosis</b>: Diabetes mellitus, type 2, Diabetes mellitus type 2 (disorder)</p><p><b>Clinical Status</b>: active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2018-03-05T19:46:00.000Z</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "encounter": {
+     "reference": "Encounter/66991387"
+    },
+    "dateRecorded": "2018-04-06",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "44054006",
+       "display": "Diabetes mellitus type 2 (disorder)",
+       "userSelected": true
+      },
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10-cm",
+       "code": "E11.9",
+       "display": "Type 2 diabetes mellitus without complications",
+       "userSelected": false
+      }
+     ],
+     "text": "Diabetes mellitus, type 2"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "2018-03-05T19:46:00.000Z"
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/d2205303499",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "d2205303499",
+    "meta": {
+     "versionId": "2205303499",
+     "lastUpdated": "2015-09-19T10:58:03.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: CISTEST, BRIAN</p><p><b>Diagnosis</b>: DM II (diabetes mellitus, type II), controlled, Diabetes mellitus type 2 (disorder)</p><p><b>Clinical Status</b>: active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2015-09-19T10:57:49.000Z</p></div>"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "encounter": {
+     "reference": "Encounter/55330044"
+    },
+    "dateRecorded": "2015-09-19",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "44054006",
+       "display": "Diabetes mellitus type 2 (disorder)",
+       "userSelected": true
+      },
+      {
+       "system": "http://hl7.org/fhir/sid/icd-9-cm",
+       "code": "250.00",
+       "display": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled",
+       "userSelected": false
+      }
+     ],
+     "text": "DM II (diabetes mellitus, type II), controlled"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "2015-09-19T10:57:49.000Z"
+   }
+  },
+  {
+   "fullUrl": "http://localhost:3000/api/Condition/d2204335527",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "d2204335527",
+    "meta": {
+     "versionId": "2204335539",
+     "lastUpdated": "2015-09-19T10:16:17.000Z"
+    },
+    "text": {
+     "status": "generated",
+     "div": "<div><p><b>Condition</b></p><p><b>Patient</b>: CISTEST, BRIAN</p><p><b>Diagnosis</b>: DM II (diabetes mellitus, type II), controlled, Diabetes mellitus type 2 (disorder)</p><p><b>Clinical Status</b>: active</p><p><b>Verification Status</b>: Confirmed</p><p><b>Onset</b>: 2015-09-19T10:15:45.000Z</p></div>"
+    },
+    "encounter": {
+     "reference": "Encounter/44875956"
+    },
+    "patient": {
+     "reference": "Patient/5566778899",
+     "display": "FISHER, FLYNNE"
+    },
+    "asserter": {
+     "reference": "Practitioner/987654321",
+     "display": "JUXLY, JUXLY"
+    },
+    "dateRecorded": "2015-09-19",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "44054006",
+       "display": "Diabetes mellitus type 2 (disorder)",
+       "userSelected": true
+      },
+      {
+       "system": "http://hl7.org/fhir/sid/icd-9-cm",
+       "code": "250.00",
+       "display": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled",
+       "userSelected": false
+      }
+     ],
+     "text": "DM II (diabetes mellitus, type II), controlled"
+    },
+    "category": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/condition-category",
+       "code": "diagnosis",
+       "display": "Diagnosis"
+      }
+     ],
+     "text": "Diagnosis"
+    },
+    "clinicalStatus": "active",
+    "verificationStatus": "confirmed",
+    "onsetDateTime": "2015-09-19T10:15:45.000Z"
    }
   }
  ]
