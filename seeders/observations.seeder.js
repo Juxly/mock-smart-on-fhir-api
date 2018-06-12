@@ -1,16 +1,10 @@
-import { Seeder } from 'mongoose-data-seed'
-import Model from '../models/observation'
-import observationMock from '../mock/observation'
+import BaseSeeder from './baseSeeder.seeder'
 import _ from 'lodash'
+import Model from '../models/observation'
 
-const data = _.map(observationMock.entry, 'resource')
-
-export default class ObservationsSeeder extends Seeder {
-  async shouldRun () {
-    return Model.count().exec().then(count => count === 0)
-  }
-
-  async run () {
-    return Model.create(data)
+export default class ObservationsSeeder extends BaseSeeder {
+  constructor () {
+    super('observation', Model)
+    this.data = _.map(this.data[0].entry, 'resource')
   }
 }

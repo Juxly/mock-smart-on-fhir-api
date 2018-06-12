@@ -1,16 +1,10 @@
-import { Seeder } from 'mongoose-data-seed'
+import BaseSeeder from './baseSeeder.seeder'
 import _ from 'lodash'
 import Model from '../models/diagnosticReport'
-import diagnosticReportMock from '../mock/diagnosticReport'
 
-const data = _.map(diagnosticReportMock.entry, 'resource')
-
-export default class DiagnosticSeeder extends Seeder {
-  async shouldRun () {
-    return Model.count().exec().then(count => count === 0)
-  }
-
-  async run () {
-    return Model.create(data)
+export default class DiagnosticReportSeeder extends BaseSeeder {
+  constructor () {
+    super('diagnosticReport', Model)
+    this.data = _.map(this.data[0].entry, 'resource')
   }
 }

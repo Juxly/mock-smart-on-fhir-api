@@ -1,5 +1,4 @@
 import { Seeder } from 'mongoose-data-seed'
-import _ from 'lodash'
 import Model from '../models/practitioner'
 import pracMock from '../mock/practitioner'
 
