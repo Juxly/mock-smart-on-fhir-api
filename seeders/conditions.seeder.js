@@ -5,6 +5,8 @@ import Model from '../models/condition'
 export default class ConditionSeeder extends BaseSeeder {
   constructor () {
     super('condition', Model)
-    this.data = _.map(this.data[0].entry, 'resource')
+    this.data = _.map(this.data, 'entry')
+    this.data = _.flatten(this.data)
+    this.data = _.map(this.data, 'resource')
   }
 }
