@@ -26,13 +26,14 @@ import medicationStatementRoute from './routes/medicationStatement'
 import encounterRoute from './routes/encounter'
 import diagnosticRoute from './routes/diagnosticReport'
 import practitionerRoute from './routes/practitioner'
+import questionnaireResponseRoute from './routes/questionnaireResponse'
 
 import AuthService from './services/auth.service'
 import config from './config'
 
 let app = express()
-mongoose.Promise = global.Promise
-mongoose.connect(config.mongoURL)
+// mongoose.Promise = global.Promise
+// mongoose.connect(config.mongoURL)
 
 app.use(cors({exposedHeaders: ['ETag', 'Location']}))
 
@@ -62,6 +63,7 @@ app.use('/api/medicationstatement', AuthService.checkToken, medicationStatementR
 app.use('/api/encounter', AuthService.checkToken, encounterRoute)
 app.use('/api/diagnosticreport', AuthService.checkToken, diagnosticRoute)
 app.use('/api/practitioner', AuthService.checkToken, practitionerRoute)
+app.use('/api/questionnaireresponse', questionnaireResponseRoute)
 
 app.use((req, res, next) => {
   let err = new Error('Not Found')
