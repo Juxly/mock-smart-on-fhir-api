@@ -1,0 +1,53 @@
+{
+  "resourceType": "Bundle",
+  "id": "1e384500-4d7f-4e23-b6c8-579e2bde9bfc",
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/Immunization?patient=12724071"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/Immunization/M197374866",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "M197374866",
+        "status": "completed",
+        "date": "2019-09-30",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "112",
+              "display": "tetanus toxoid, unspecified formulation",
+              "userSelected": false
+            }
+          ],
+          "text": "tetanus toxoid"
+        },
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "wasNotGiven": false,
+        "reported": true,
+        "performer": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "doseQuantity": {
+          "value": 0,
+          "unit": "unknown unit",
+          "system": "http://unitsofmeasure.org",
+          "code": "{unknownunit}"
+        }
+      }
+    }
+  ]
+}

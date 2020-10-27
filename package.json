@@ -3,12 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "babel-node --presets es2015 ./bin/www",
+    "start": "node ./bin/www",
     "seed": "md-seed run --dropdb",
     "data": "node dataLoader.js",
     "encrypt": "node encrypter.js"
   },
   "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "@babel/runtime": "^7.8.4",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.3.5",
     "cors": "^2.8.3",
@@ -20,25 +25,27 @@
     "jsonwebtoken": "^7.4.1",
     "lodash": "^4.17.19",
     "mongoose": "^5.7.5",
-    "mongoose-data-seed": "^1.0.0",
     "morgan": "~1.9.1",
+    "nodemon": "^2.0.4",
     "npm": "^6.14.8",
     "object-encrypter": "^0.1.3",
     "rand-token": "^0.4.0",
     "serve-favicon": "^2.5.0",
+    "shelljs": "^0.8.4",
     "shortid": "^2.2.8"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
     "babel-eslint": "^7.2.3",
     "babel-plugin-istanbul": "^4.1.4",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
     "eslint": "^4.18.2",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "mongoose-data-seed": "git+https://github.com/james-ingold/mongoose-data-seed.git"
   }
 }

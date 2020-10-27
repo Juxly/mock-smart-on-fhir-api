@@ -1,13 +1,14 @@
 {
-  "presets": [
-    ["es2015"],
-    "stage-2"
-  ],
-  "plugins": [],
-  "comments": false,
-  "env": {
-    "test": {
-      "plugins": [ "istanbul" ]
-    }
-  }
+    "presets": [
+        ["@babel/preset-env", {
+            "targets": {
+                "node": true
+            }
+        }]
+    ],
+    "plugins": [
+        ["@babel/transform-runtime"]
+    ],
+  "sourceMaps": "inline",
+  "retainLines": true
 }

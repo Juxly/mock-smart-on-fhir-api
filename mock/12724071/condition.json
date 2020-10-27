@@ -1,0 +1,581 @@
+{
+  "resourceType": "Bundle",
+  "id": "e3854c7d-19b9-4637-bd94-23275d22bf71",
+  "type": "searchset",
+  "total": 13,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/Condition?patient=12724071"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/p73094551",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "p73094551",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-09-12",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36118008",
+              "display": "Pneumothorax (disorder)",
+              "userSelected": true
+            }
+          ],
+          "text": "Pneumothorax"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://argonaut.hl7.org",
+              "code": "problem",
+              "display": "Problem"
+            }
+          ],
+          "text": "Problem"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "abatementBoolean": false
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/d2572556317",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572556317",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-09-12",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36118008",
+              "display": "Pneumothorax (disorder)",
+              "userSelected": true
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "J93.9",
+              "display": "Pneumothorax, unspecified",
+              "userSelected": false
+            }
+          ],
+          "text": "Pneumothorax"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-09-12T01:37:00.000Z"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/p73033649",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "p73033649",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2019-12-26",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "195967001",
+              "display": "Asthma (disorder)",
+              "userSelected": true
+            }
+          ],
+          "text": "Asthma"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://argonaut.hl7.org",
+              "code": "problem",
+              "display": "Problem"
+            }
+          ],
+          "text": "Problem"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "abatementBoolean": false
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/d2572089653",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572089653",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "encounter": {
+          "reference": "Encounter/97939533"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2019-12-26",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "195967001",
+              "display": "Asthma (disorder)",
+              "userSelected": true
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "J45.998",
+              "display": "Other asthma",
+              "userSelected": false
+            }
+          ],
+          "text": "Asthma"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2019-12-26T18:00:00.000Z"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/p73098283",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "p73098283",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-09-29",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "426749004",
+              "display": "Chronic atrial fibrillation (disorder)",
+              "userSelected": true
+            }
+          ],
+          "text": "Chronic atrial fibrillation"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://argonaut.hl7.org",
+              "code": "problem",
+              "display": "Problem"
+            }
+          ],
+          "text": "Problem"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-09-28",
+        "abatementBoolean": false
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/d2572586797",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572586797",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-09-29",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "426749004",
+              "display": "Chronic atrial fibrillation (disorder)",
+              "userSelected": true
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I48.20",
+              "display": "Chronic atrial fibrillation, unspecified",
+              "userSelected": false
+            }
+          ],
+          "text": "Chronic atrial fibrillation"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "verificationStatus": "entered-in-error",
+        "onsetDateTime": "2020-09-29T17:00:00.000Z"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/d2572599759",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572599759",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-10-06",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I48.20",
+              "display": "Chronic atrial fibrillation, unspecified",
+              "userSelected": true
+            }
+          ],
+          "text": "Chronic atrial fibrillation, unspecified"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "verificationStatus": "entered-in-error",
+        "onsetDateTime": "2020-10-06T18:55:04.000Z"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/d2572599763",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572599763",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-10-06",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I48.20",
+              "display": "Chronic atrial fibrillation, unspecified",
+              "userSelected": true
+            }
+          ],
+          "text": "Chronic atrial fibrillation, unspecified"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-10-06T18:59:50.000Z"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/d2572587715",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572587715",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-09-30",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I48.0",
+              "display": "Paroxysmal atrial fibrillation",
+              "userSelected": true
+            }
+          ],
+          "text": "Paroxysmal atrial fibrillation"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-09-30T14:40:37.000Z"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/d2572588277",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572588277",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "encounter": {
+          "reference": "Encounter/97939533"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-10-02",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I48.0",
+              "display": "Paroxysmal atrial fibrillation",
+              "userSelected": true
+            }
+          ],
+          "text": "Paroxysmal atrial fibrillation"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-09-28T22:24:44.000Z"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/d2572556315",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572556315",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "encounter": {
+          "reference": "Encounter/97939554"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-09-12",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "J20",
+              "display": "Acute bronchitis",
+              "userSelected": true
+            }
+          ],
+          "text": "Acute bronchitis"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-09-12T01:35:00.000Z"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/d2572602375",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572602375",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-10-07",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "S72.461A",
+              "display": "Displaced supracondylar fracture with intracondylar extension of lower end of right femur, initial encounter for closed fracture",
+              "userSelected": true
+            }
+          ],
+          "text": "Displaced supracondylar fracture with intracondylar extension of lower end of right femur, initial encounter for closed fracture"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-10-07T15:47:19.000Z"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/d2572599757",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2572599757",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "asserter": {
+          "reference": "Practitioner/987654321",
+          "display": "JUXLY, JUXLY"
+        },
+        "dateRecorded": "2020-10-06",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "D68.0",
+              "display": "Von Willebrand's disease",
+              "userSelected": true
+            }
+          ],
+          "text": "Von Willebrand's disease"
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/condition-category",
+              "code": "diagnosis",
+              "display": "Diagnosis"
+            }
+          ],
+          "text": "Diagnosis"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "onsetDateTime": "2020-10-06T18:54:31.000Z"
+      }
+    }
+  ]
+}

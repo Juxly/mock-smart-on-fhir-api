@@ -1,0 +1,703 @@
+{
+  "resourceType": "Bundle",
+  "id": "02d426a6-31e6-43f5-ba76-59e45066c73d",
+  "type": "searchset",
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/Observation?patient=12724071&_count=50"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/1-73081415",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1-73081415",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363905002",
+              "display": "Details of alcohol drinking behavior (observable entity)"
+            }
+          ],
+          "text": "Alcohol"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:45.000Z",
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/data-absent-reason",
+              "code": "unknown",
+              "display": "Unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "related": [
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/73081415-q4625817"
+            }
+          },
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/73081415-q4625813"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/73081415-q4625817",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73081415-q4625817",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363905002",
+              "display": "Details of alcohol drinking behavior (observable entity)"
+            }
+          ],
+          "text": "SHX Alcohol use"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:16.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "15240007",
+              "display": "Current (qualifier value)"
+            }
+          ],
+          "text": "Current"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/73081415-q4625813",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73081415-q4625813",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363905002",
+              "display": "Details of alcohol drinking behavior (observable entity)"
+            }
+          ],
+          "text": "SHX Alcohol type"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:16.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "53410008",
+              "display": "Beer (substance)"
+            }
+          ],
+          "text": "Beer"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/54-73081457",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "54-73081457",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364393001",
+              "display": "Nutritional observable (observable entity)"
+            }
+          ],
+          "text": "Nutrition/Health"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:45.000Z",
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/data-absent-reason",
+              "code": "unknown",
+              "display": "Unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "related": [
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/73081457-q4625978"
+            }
+          },
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/73081457-q4625982"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/73081457-q4625978",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73081457-q4625978",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "text": "SHX Diet description"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:45.000Z",
+        "valueString": "regular"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/73081457-q4625982",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73081457-q4625982",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "text": "SHX Diet"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:45.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17854005",
+              "display": "Regular (qualifier value)"
+            }
+          ],
+          "text": "Regular"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/70-73081443",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "70-73081443",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363901006",
+              "display": "Detail of sexuality and sexual activity (observable entity)"
+            }
+          ],
+          "text": "Sexual"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:45.000Z",
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/data-absent-reason",
+              "code": "unknown",
+              "display": "Unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "related": [
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/73081443-q4626038"
+            }
+          },
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/73081443-q4626054"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/73081443-q4626038",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73081443-q4626038",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "text": "SHX Sexually active"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:34.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "373066001",
+              "display": "Yes (qualifier value)"
+            }
+          ],
+          "text": "Yes"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/73081443-q4626054",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73081443-q4626054",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76690-7"
+            }
+          ],
+          "text": "SHX Sexual orientation"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:34.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "20430005",
+              "display": "Heterosexual (finding)"
+            }
+          ],
+          "text": "Straight or heterosexual"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/81-73081429",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "81-73081429",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363908000",
+              "display": "Details of drug misuse behavior (observable entity)"
+            }
+          ],
+          "text": "Substance Abuse"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:45.000Z",
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/data-absent-reason",
+              "code": "unknown",
+              "display": "Unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "related": [
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/73081429-q4625833"
+            }
+          },
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/73081429-q4625837"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/73081429-q4625833",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73081429-q4625833",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "text": "SHX Substance abuse use"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:24.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "15240007",
+              "display": "Current (qualifier value)"
+            }
+          ],
+          "text": "Current"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/73081429-q4625837",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73081429-q4625837",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ],
+          "text": "Social History"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "56832-9"
+            }
+          ],
+          "text": "SHX Substance abuse type"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "issued": "2020-06-30T20:21:24.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "703842006",
+              "display": "1-phenylpropan-2-amine (substance)"
+            }
+          ],
+          "text": "Amphetamines"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/M197279908",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "M197279908",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "3137-7"
+            }
+          ],
+          "text": "Height/Length Measured"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "effectiveDateTime": "2020-03-05T17:43:00.000Z",
+        "issued": "2020-03-05T17:43:51.000Z",
+        "valueQuantity": {
+          "value": 175,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/M197279906",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "M197279906",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "79348-9"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ],
+          "text": "Weight Dosing"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "effectiveDateTime": "2020-03-05T17:43:00.000Z",
+        "issued": "2020-03-05T17:43:51.000Z",
+        "valueQuantity": {
+          "value": 91,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/M197198626",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "M197198626",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "unknown"
+                }
+              ]
+            }
+          ]
+        },
+        "code": {
+          "text": "D-BOOST Principal Dx COPD"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "encounter": {
+          "reference": "Encounter/97939533"
+        },
+        "effectiveDateTime": "2019-12-26T20:45:02.000Z",
+        "issued": "2019-12-26T20:45:02.000Z",
+        "valueString": "Yes"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Observation/M197198628",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "M197198628",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "unknown"
+                }
+              ]
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "3431000175101"
+            }
+          ],
+          "text": "D-Readmission Risk"
+        },
+        "subject": {
+          "reference": "Patient/12724071"
+        },
+        "encounter": {
+          "reference": "Encounter/97939533"
+        },
+        "effectiveDateTime": "2019-12-26T20:45:02.000Z",
+        "issued": "2019-12-26T20:45:02.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255594003",
+              "display": "Complete (qualifier value)"
+            }
+          ],
+          "text": "Action completed"
+        }
+      }
+    }
+  ]
+}

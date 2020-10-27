@@ -8,6 +8,9 @@ router.get('/', function (req, res) {
   }, {
     name: 'Dave Smart',
     hash: 'fadc01b09434f0dc31c8dc32e7461417cc61dde29d0772a1d74de452ee789d96c059e75bdd486cd8041b1be0e326d43621ae55e8f02081bb91bfcda364be3fc1caa5fc9e824d4244fbcef88f060b09a6e8806ac50bd385e0d579b3a091c11af3'
+  }, {
+    name: 'Valerie Smart',
+    hash: '5c2b53d6356d9f4d3c1693a3cd78cd85981e20d28b07586f625196379cb7de2e406af81b6937a4a37286ce995b8fc9ee328d178e5e934886ef361aed1113e0db42e2d88dd1b68d0b06f9e2b66692e21169446d2ffd666e30f0f37850a3d004df'
   }]
   return res.send(contexts)
 })

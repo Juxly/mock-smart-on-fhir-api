@@ -1,0 +1,148 @@
+[
+  {
+    "resourceType": "Bundle",
+    "id": "3cb5e6f4-d75d-4e0f-8052-5248c5ef4b84",
+    "type": "searchset",
+    "total": 3,
+    "link": [
+      {
+        "relation": "self",
+        "url": "http://localhost:3000/api/Condition?patient=9111479715"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "http://localhost:3000/api/Condition/h19462869",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "h19462869",
+          "meta": {
+            "versionId": "19462869",
+            "lastUpdated": "2018-06-20T19:26:20.851Z"
+          },
+          "patient": {
+            "reference": "Patient/9111479715",
+            "display": "Christiansen, Claire"
+          },
+          "asserter": {
+            "reference": "Practitioner/123456789",
+            "display": "Fisher, Burton"
+          },
+          "dateRecorded": "2018-06-20",
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "E10.65",
+                "display": "Type 1 Diabetes Mellitus with Hyperglycemia",
+                "userSelected": false
+              }
+            ],
+            "text": "Type 1 Diabetes Mellitus with Hyperglycemia"
+          },
+          "category": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "diagnosis",
+                "display": "Diagnosis"
+              }
+            ],
+            "text": "Diagnosis"
+          },
+          "clinicalStatus": "active",
+          "verificationStatus": "confirmed",
+          "onsetDateTime": "2018-06-20T19:26:20.851Z"
+        }
+      },
+      {
+        "fullUrl": "http://localhost:3000/api/Condition/i28525085",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "i28525085",
+          "meta": {
+            "versionId": "28525085",
+            "lastUpdated": "2018-06-20T19:26:20.851Z"
+          },
+          "patient": {
+            "reference": "Patient/9111479715",
+            "display": "Christiansen, Claire"
+          },
+          "asserter": {
+            "reference": "Practitioner/123456789",
+            "display": "Fisher, Burton"
+          },
+          "dateRecorded": "2018-06-20",
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "G12.9",
+                "display": "Hamano-Tsukamoto syndrome",
+                "userSelected": false
+              }
+            ],
+            "text": "Hamano-Tsukamoto syndrome"
+          },
+          "category": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "diagnosis",
+                "display": "Diagnosis"
+              }
+            ],
+            "text": "Diagnosis"
+          },
+          "clinicalStatus": "active",
+          "verificationStatus": "confirmed",
+          "onsetDateTime": "2018-06-20T19:26:20.851Z"
+        }
+      },
+      {
+        "fullUrl": "http://localhost:3000/api/Condition/t55869048",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "t55869048",
+          "meta": {
+            "versionId": "55869048",
+            "lastUpdated": "2018-06-20T19:26:20.851Z"
+          },
+          "patient": {
+            "reference": "Patient/9111479715",
+            "display": "Christiansen, Claire"
+          },
+          "asserter": {
+            "reference": "Practitioner/123456789",
+            "display": "Fisher, Burton"
+          },
+          "dateRecorded": "2018-06-20",
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "D68.52",
+                "display": "Prothrombin gene mutation",
+                "userSelected": false
+              }
+            ],
+            "text": "Prothrombin gene mutation"
+          },
+          "category": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "diagnosis",
+                "display": "Diagnosis"
+              }
+            ],
+            "text": "Diagnosis"
+          },
+          "clinicalStatus": "active",
+          "verificationStatus": "confirmed",
+          "onsetDateTime": "2018-06-20T19:26:20.851Z"
+        }
+      }
+    ]
+  }
+]

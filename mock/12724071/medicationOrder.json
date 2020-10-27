@@ -1,0 +1,715 @@
+{
+  "resourceType": "Bundle",
+  "id": "06dc13e5-8ef7-4bb5-8b8f-70cd9faa5fc5",
+  "type": "searchset",
+  "total": 7,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/Condition/MedicationOrder?patient=12724071"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/MedicationOrder/309799977",
+      "resource": {
+        "resourceType": "MedicationOrder",
+        "id": "309799977",
+        "dateWritten": "2020-03-05T11:44:23.000-06:00",
+        "status": "active",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "prescriber": {
+          "reference": "Practitioner/123456789",
+          "display": "Fisher, Burton"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "note": "Order Comment: Target Dose: Augmentin 250 mg-62.5 mg/5 mL oral liquid 10 mg/kg  3/5/2020 11:44:27 AM",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "617339",
+              "display": "Amoxicillin 50 MG/ML / Clavulanate 12.5 MG/ML Oral Suspension [Augmentin]",
+              "userSelected": false
+            }
+          ],
+          "text": "amoxicillin-clavulanate (Augmentin 250 mg-62.5 mg/5 mL oral liquid)"
+        },
+        "dosageInstruction": [
+          {
+            "text": "910 mg = 18.2 mL, Oral, TID",
+            "_text": {
+              "extension": [
+                {
+                  "url": "https://fhir-ehr.cerner.com/dstu2/StructureDefinition/patient-friendly-display",
+                  "valueString": "18.2 Milliliters Oral (given by mouth) 3 times a day. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2020-03-05T14:00:00.000-06:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/GTSAbbreviation",
+                    "code": "TID",
+                    "display": "TID",
+                    "userSelected": false
+                  }
+                ],
+                "text": "TID"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "Oral Route of Administration",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "doseQuantity": {
+              "value": 18.2,
+              "unit": "mL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mL"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2020-03-05T11:44:23.000-06:00"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/MedicationOrder/314203151",
+      "resource": {
+        "resourceType": "MedicationOrder",
+        "id": "314203151",
+        "dateWritten": "2020-07-20T08:56:55.000-05:00",
+        "status": "active",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "prescriber": {
+          "reference": "Practitioner/12742504",
+          "display": "Littlefield, Scott"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "29046",
+              "display": "Lisinopril",
+              "userSelected": false
+            }
+          ],
+          "text": "lisinopril"
+        },
+        "dosageInstruction": [
+          {
+            "text": "20 mg = 1 tab, Oral, Daily",
+            "_text": {
+              "extension": [
+                {
+                  "url": "https://fhir-ehr.cerner.com/dstu2/StructureDefinition/patient-friendly-display",
+                  "valueString": "20 Milligrams Oral (given by mouth) every day. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2020-07-20T09:00:00.000-05:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/timing-abbreviation",
+                    "code": "QD",
+                    "display": "QD",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Daily"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "Oral Route of Administration",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "doseQuantity": {
+              "value": 20,
+              "unit": "mg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2020-07-20T08:56:55.000-05:00"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/MedicationOrder/314203199",
+      "resource": {
+        "resourceType": "MedicationOrder",
+        "id": "314203199",
+        "dateWritten": "2020-07-20T09:08:39.000-05:00",
+        "status": "active",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "prescriber": {
+          "reference": "Practitioner/12742504",
+          "display": "Littlefield, Scott"
+        },
+        "priorPrescription": {
+          "reference": "MedicationOrder/314203151"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "314077",
+              "display": "Lisinopril 20 MG Oral Tablet",
+              "userSelected": false
+            }
+          ],
+          "text": "lisinopril (lisinopril 20 mg oral tablet)"
+        },
+        "dosageInstruction": [
+          {
+            "text": "20 mg = 1 tab, Oral, Daily, 30 tab, 0 Refill(s)",
+            "_text": {
+              "extension": [
+                {
+                  "url": "https://fhir-ehr.cerner.com/dstu2/StructureDefinition/patient-friendly-display",
+                  "valueString": "1 tab Oral (given by mouth) every day. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2020-07-20T09:08:00.000-05:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/timing-abbreviation",
+                    "code": "QD",
+                    "display": "QD",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Daily"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "Oral Route of Administration",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "doseQuantity": {
+              "value": 1,
+              "unit": "tab",
+              "system": "http://unitsofmeasure.org",
+              "code": "{tbl}"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2020-07-20T09:08:39.000-05:00"
+          },
+          "quantity": {
+            "value": 30,
+            "unit": "tab",
+            "system": "http://unitsofmeasure.org",
+            "code": "{tbl}"
+          }
+        },
+        "substitution": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/substanceAdminSubstitution",
+                "code": "E",
+                "display": "equivalent",
+                "userSelected": false
+              }
+            ],
+            "text": "Equivalent"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/MedicationOrder/312180717",
+      "resource": {
+        "resourceType": "MedicationOrder",
+        "id": "312180717",
+        "dateWritten": "2020-05-21T08:47:08.000-05:00",
+        "status": "active",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "prescriber": {
+          "reference": "Practitioner/12742384",
+          "display": "PWMEDACTIONPLAN, Physician - Hospitalist"
+        },
+        "encounter": {
+          "reference": "Encounter/97939554"
+        },
+        "note": "Note to Pharmacy: Test note tp pharmacy",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "313190",
+              "display": "Tacrolimus 0.5 MG Oral Capsule",
+              "userSelected": false
+            }
+          ],
+          "text": "tacrolimus (tacrolimus 0.5 mg oral capsule)"
+        },
+        "dosageInstruction": [
+          {
+            "text": "0.5 mg = 1 cap, Oral, every 12 hr, 60 cap, 0 Refill(s)",
+            "_text": {
+              "extension": [
+                {
+                  "url": "https://fhir-ehr.cerner.com/dstu2/StructureDefinition/patient-friendly-display",
+                  "valueString": "1 Capsules Oral (given by mouth) every 12 hours. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2020-05-21T08:47:00.000-05:00"
+                }
+              },
+              "code": {
+                "text": "every 12 hr"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "Oral Route of Administration",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "doseQuantity": {
+              "value": 1,
+              "unit": "cap",
+              "system": "http://unitsofmeasure.org",
+              "code": "{Capsule}"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2020-05-21T08:47:08.000-05:00"
+          },
+          "quantity": {
+            "value": 60,
+            "unit": "cap",
+            "system": "http://unitsofmeasure.org",
+            "code": "{Capsule}"
+          }
+        },
+        "substitution": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/substanceAdminSubstitution",
+                "code": "E",
+                "display": "equivalent",
+                "userSelected": false
+              }
+            ],
+            "text": "Equivalent"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/MedicationOrder/309799975",
+      "resource": {
+        "resourceType": "MedicationOrder",
+        "id": "309799975",
+        "dateWritten": "2020-03-05T11:43:49.000-06:00",
+        "status": "active",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "prescriber": {
+          "reference": "Practitioner/123456789",
+          "display": "Fisher, Burton"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "11124",
+              "display": "Vancomycin",
+              "userSelected": false
+            }
+          ],
+          "text": "vancomycin"
+        },
+        "dosageInstruction": [
+          {
+            "text": "125 mg = 1 cap, Oral, QID",
+            "_text": {
+              "extension": [
+                {
+                  "url": "https://fhir-ehr.cerner.com/dstu2/StructureDefinition/patient-friendly-display",
+                  "valueString": "125 Milligrams Oral (given by mouth) 4 times a day. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2020-03-05T12:00:00.000-06:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/GTSAbbreviation",
+                    "code": "QID",
+                    "display": "QID",
+                    "userSelected": false
+                  }
+                ],
+                "text": "QID"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "Oral Route of Administration",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "doseQuantity": {
+              "value": 125,
+              "unit": "mg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2020-03-05T11:43:49.000-06:00"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/MedicationOrder/316151565",
+      "resource": {
+        "resourceType": "MedicationOrder",
+        "id": "316151565",
+        "dateWritten": "2020-09-17T15:51:05.000-05:00",
+        "status": "active",
+        "dateEnded": "2020-10-17T15:51:00.000-05:00",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "prescriber": {
+          "reference": "Practitioner/12742711",
+          "display": "PWJuxly, PhysicianHosp"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "863671",
+              "display": "Tamsulosin hydrochloride 0.4 MG Oral Capsule [Flomax]",
+              "userSelected": false
+            }
+          ],
+          "text": "tamsulosin (Flomax 0.4 mg oral capsule)"
+        },
+        "dosageInstruction": [
+          {
+            "text": "0.4 mg = 1 cap, Oral, Daily, for 30 days, 30 cap, 0 Refill(s)",
+            "_text": {
+              "extension": [
+                {
+                  "url": "https://fhir-ehr.cerner.com/dstu2/StructureDefinition/patient-friendly-display",
+                  "valueString": "1 Capsules Oral (given by mouth) every day for 30 Days. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2020-09-17T15:51:00.000-05:00",
+                  "end": "2020-10-17T15:51:00.000-05:00"
+                }
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/timing-abbreviation",
+                    "code": "QD",
+                    "display": "QD",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Daily"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "Oral Route of Administration",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "doseQuantity": {
+              "value": 1,
+              "unit": "cap",
+              "system": "http://unitsofmeasure.org",
+              "code": "{Capsule}"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2020-09-17T15:51:05.000-05:00"
+          },
+          "quantity": {
+            "value": 30,
+            "unit": "cap",
+            "system": "http://unitsofmeasure.org",
+            "code": "{Capsule}"
+          }
+        },
+        "substitution": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/substanceAdminSubstitution",
+                "code": "E",
+                "display": "equivalent",
+                "userSelected": false
+              }
+            ],
+            "text": "Equivalent"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/MedicationOrder/316151589",
+      "resource": {
+        "resourceType": "MedicationOrder",
+        "id": "316151589",
+        "dateWritten": "2020-09-17T15:55:01.000-05:00",
+        "status": "completed",
+        "dateEnded": "2020-09-24T15:55:00.000-05:00",
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "prescriber": {
+          "reference": "Practitioner/12742711",
+          "display": "PWJuxly, PhysicianHosp"
+        },
+        "encounter": {
+          "reference": "Encounter/97953486"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "205769",
+              "display": "Ciprofloxacin 250 MG Oral Tablet [Cipro]",
+              "userSelected": false
+            }
+          ],
+          "text": "ciprofloxacin (Cipro 250 mg oral tablet)"
+        },
+        "dosageInstruction": [
+          {
+            "text": "250 mg = 1 tab, Oral, every 12 hr, for 7 days, 14 tab, 0 Refill(s)",
+            "_text": {
+              "extension": [
+                {
+                  "url": "https://fhir-ehr.cerner.com/dstu2/StructureDefinition/patient-friendly-display",
+                  "valueString": "1 tab Oral (given by mouth) every 12 hours for 7 Days. Refills: 0."
+                }
+              ]
+            },
+            "timing": {
+              "repeat": {
+                "boundsQuantity": {
+                  "value": 7,
+                  "unit": "days",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "d"
+                }
+              },
+              "code": {
+                "text": "every 12 hr"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C38288",
+                  "display": "Oral Route of Administration",
+                  "userSelected": false
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route (qualifier value)",
+                  "userSelected": false
+                }
+              ],
+              "text": "Oral"
+            },
+            "doseQuantity": {
+              "value": 1,
+              "unit": "tab",
+              "system": "http://unitsofmeasure.org",
+              "code": "{tbl}"
+            }
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2020-09-17T15:55:01.000-05:00"
+          },
+          "quantity": {
+            "value": 14,
+            "unit": "tab",
+            "system": "http://unitsofmeasure.org",
+            "code": "{tbl}"
+          }
+        },
+        "substitution": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/substanceAdminSubstitution",
+                "code": "E",
+                "display": "equivalent",
+                "userSelected": false
+              }
+            ],
+            "text": "Equivalent"
+          }
+        }
+      }
+    }
+  ]
+}

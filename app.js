@@ -27,13 +27,17 @@ import encounterRoute from './routes/encounter'
 import diagnosticRoute from './routes/diagnosticReport'
 import practitionerRoute from './routes/practitioner'
 import questionnaireResponseRoute from './routes/questionnaireResponse'
+import admin from './routes/admin'
 
 import AuthService from './services/auth.service'
 import config from './config'
 
 let app = express()
-// mongoose.Promise = global.Promise
-// mongoose.connect(config.mongoURL)
+mongoose.Promise = global.Promise
+mongoose.connect(config.mongoURL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
 
 app.use(cors({exposedHeaders: ['ETag', 'Location']}))
 
@@ -51,6 +55,7 @@ app.use('/api/oauth', auth)
 app.use('/api/metadata', metadata)
 app.use('/api/openid', openid)
 app.use('/api/contexts', contexts)
+app.use('/api/admin', AuthService.checkToken, admin)
 app.use('/api/patient', AuthService.checkToken, patient)
 app.use('/api/condition', AuthService.checkToken, condition)
 app.use('/api/observation', AuthService.checkToken, observation)

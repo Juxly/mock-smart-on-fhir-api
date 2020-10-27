@@ -1,0 +1,66 @@
+{
+  "resourceType": "Bundle",
+  "id": "0ff85e70-98b2-43be-afa7-c1588c192a61",
+  "type": "searchset",
+  "total": 2,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/Procedure?patient=12724071"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/Procedure/2572566839",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "2572566839",
+        "subject": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "50947",
+              "display": "Laparoscopy, surgical; ureteroneocystostomy with cystoscopy and ureteral stent placement"
+            }
+          ],
+          "text": "Laparoscopy, surgical; ureteroneocystostomy with cystoscopy and ureteral stent placement"
+        },
+        "performedDateTime": "2020-09-08T00:00:00.000-05:00",
+        "encounter": {
+          "reference": "Encounter/97953486"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Procedure/2572568721",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "2572568721",
+        "subject": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "119954001",
+              "display": "Adenoid excision (procedure)"
+            }
+          ],
+          "text": "Adenoid excision (text)"
+        },
+        "performedDateTime": "2020-09-21T00:00:00.000-05:00",
+        "encounter": {
+          "reference": "Encounter/97953486"
+        }
+      }
+    }
+  ]
+}

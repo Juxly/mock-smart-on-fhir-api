@@ -1,0 +1,1707 @@
+{
+  "resourceType": "Bundle",
+  "id": "ab715577-b158-4ea2-9823-febea525ca34",
+  "type": "searchset",
+  "total": 5,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/api/Encounter?patient=12724071"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/Encounter/97954469",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "97954469",
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "text": "FIN NBR"
+            },
+            "system": "urn:oid:5.5.5.5.5.5.",
+            "value": "16169",
+            "period": {
+              "start": "2020-08-21T13:01:53.000Z"
+            }
+          }
+        ],
+        "status": "finished",
+        "class": "outpatient",
+        "type": [
+          {
+            "text": "Between Visit"
+          }
+        ],
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "period": {
+          "start": "2020-08-21T13:01:53.000Z",
+          "end": "2020-08-22T04:59:59.000Z"
+        },
+        "hospitalization": {
+          "dischargeDisposition": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/discharge-disposition",
+                "code": "home",
+                "display": "Home",
+                "userSelected": false
+              }
+            ],
+            "text": "Home or Self Care"
+          }
+        },
+        "serviceProvider": {
+          "reference": "Organization/619848"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/Encounter/97954777",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "97954777",
+        "extension": [
+          {
+            "url": "http://localhost:3000/dstu2/StructureDefinition/encounter-guarantor",
+            "extension": [
+              {
+                "url": "party",
+                "valueReference": {
+                  "reference": "Patient/12724071",
+                  "display": "SMART, VALERIE"
+                }
+              },
+              {
+                "url": "period",
+                "valuePeriod": {
+                  "start": "2019-12-26T16:15:33.000Z"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "text": "FIN NBR"
+            },
+            "system": "urn:oid:5.5.5.5.5.5.",
+            "value": "16325"
+          }
+        ],
+        "status": "in-progress",
+        "class": "outpatient",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0004",
+                "code": "O",
+                "display": "Outpatient",
+                "userSelected": false
+              }
+            ],
+            "text": "Outpatient"
+          }
+        ],
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-10-08T03:20:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-09-24T15:28:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PPRF",
+                    "display": "primary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Covering Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-09-24T19:47:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-09-17T13:20:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-09-16T13:00:00.000Z"
+        },
+        "serviceProvider": {
+          "reference": "Organization/619848"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/Encounter/97939554",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "97939554",
+        "extension": [
+          {
+            "url": "http://localhost:3000/dstu2/StructureDefinition/encounter-guarantor",
+            "extension": [
+              {
+                "url": "party",
+                "valueReference": {
+                  "reference": "Patient/12724071",
+                  "display": "SMART, VALERIE"
+                }
+              },
+              {
+                "url": "period",
+                "valuePeriod": {
+                  "start": "2019-12-26T16:40:39.000Z"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "text": "FIN NBR"
+            },
+            "system": "urn:oid:5.5.5.5.5.5.",
+            "value": "15963",
+            "period": {
+              "start": "2019-12-26T16:40:39.000Z"
+            }
+          }
+        ],
+        "status": "finished",
+        "class": "outpatient",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0004",
+                "code": "O",
+                "display": "Outpatient",
+                "userSelected": false
+              }
+            ],
+            "text": "Outpatient"
+          }
+        ],
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/encounter-priority",
+              "code": "no-urg",
+              "display": "Non-urgent",
+              "userSelected": false
+            }
+          ],
+          "text": "Elective"
+        },
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "ATND",
+                    "display": "attender",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Attending Physician"
+              }
+            ],
+            "period": {
+              "start": "2019-12-26T16:40:39.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-10-05T19:05:17.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-09-12T01:34:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-08-03T11:01:22.000Z",
+              "end": "2020-08-03T12:01:10.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-05-21T13:46:00.000Z",
+              "end": "2020-05-21T14:01:08.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Referring Physician"
+              }
+            ],
+            "period": {
+              "start": "2019-12-26T16:40:39.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PPRF",
+                    "display": "primary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Covering Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-09-12T00:19:37.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          }
+        ],
+        "period": {
+          "start": "2019-12-26T16:39:54.000Z",
+          "end": "2019-12-27T05:59:59.000Z"
+        },
+        "reason": [
+          {
+            "text": "Illness"
+          }
+        ],
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/admit-source",
+                "code": "other",
+                "display": "Other",
+                "userSelected": false
+              }
+            ],
+            "text": "Information Not Available"
+          },
+          "dischargeDisposition": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/discharge-disposition",
+                "code": "home",
+                "display": "Home",
+                "userSelected": false
+              }
+            ],
+            "text": "Home or Self Care"
+          }
+        },
+        "serviceProvider": {
+          "reference": "Organization/619848"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/Encounter/97953486",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "97953486",
+        "extension": [
+          {
+            "url": "http://localhost:3000/dstu2/StructureDefinition/encounter-guarantor",
+            "extension": [
+              {
+                "url": "party",
+                "valueReference": {
+                  "reference": "Patient/12724071",
+                  "display": "SMART, VALERIE"
+                }
+              },
+              {
+                "url": "period",
+                "valuePeriod": {
+                  "start": "2020-03-04T18:04:16.000Z"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "text": "FIN NBR"
+            },
+            "system": "urn:oid:5.5.5.5.5.5.",
+            "value": "16003",
+            "period": {
+              "start": "2020-03-04T18:04:16.000Z"
+            }
+          }
+        ],
+        "status": "in-progress",
+        "class": "inpatient",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0004",
+                "code": "I",
+                "display": "Inpatient",
+                "userSelected": false
+              }
+            ],
+            "text": "Inpatient"
+          }
+        ],
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/encounter-priority",
+              "code": "no-urg",
+              "display": "Non-urgent",
+              "userSelected": false
+            }
+          ],
+          "text": "Elective"
+        },
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "ADM",
+                    "display": "admitter",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Admitting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-03-05T17:41:56.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "ATND",
+                    "display": "attender",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Attending Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-03-04T18:04:16.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-09-15T15:28:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-08-24T19:22:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-08-12T16:22:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-07-07T23:31:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-06-30T20:21:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-05-21T13:45:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PPRF",
+                    "display": "primary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Ordering Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-03-05T17:40:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "SPRF",
+                    "display": "secondary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Registered Nurse"
+              }
+            ],
+            "period": {
+              "start": "2020-09-28T16:27:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "SPRF",
+                    "display": "secondary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Registered Nurse"
+              }
+            ],
+            "period": {
+              "start": "2020-09-24T15:31:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "SPRF",
+                    "display": "secondary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Registered Nurse"
+              }
+            ],
+            "period": {
+              "start": "2020-06-16T20:33:00.000Z",
+              "end": "2020-06-17T13:01:26.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Referring Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-03-04T18:04:16.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-09-22T15:40:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-09-08T06:06:46.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-09-07T14:50:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-08-18T20:18:45.000Z",
+              "end": "2020-08-19T09:01:47.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-08-12T22:04:25.000Z",
+              "end": "2020-08-13T11:01:28.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-08-10T19:47:00.000Z",
+              "end": "2020-08-11T08:01:53.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-07-22T14:43:00.000Z",
+              "end": "2020-07-23T03:01:24.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-07-22T10:44:00.000Z",
+              "end": "2020-07-22T23:02:01.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-07-21T19:51:00.000Z",
+              "end": "2020-07-22T08:01:21.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-07-21T18:47:00.000Z",
+              "end": "2020-07-22T07:01:31.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-07-20T13:27:00.000Z",
+              "end": "2020-07-21T02:01:40.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-07-20T13:24:00.000Z",
+              "end": "2020-07-21T02:01:40.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PPRF",
+                    "display": "primary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "ED Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-06-23T19:34:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-06-10T22:18:35.000Z",
+              "end": "2020-06-11T11:01:09.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-05-20T18:06:08.000Z",
+              "end": "2020-05-21T07:01:21.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/12742531",
+              "display": "Tripathi, Vibhuti"
+            }
+          }
+        ],
+        "period": {
+          "start": "2020-03-04T18:02:46.000Z"
+        },
+        "reason": [
+          {
+            "text": "Health"
+          }
+        ],
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/admit-source",
+                "code": "other",
+                "display": "Other",
+                "userSelected": false
+              }
+            ],
+            "text": "Information Not Available"
+          }
+        },
+        "serviceProvider": {
+          "reference": "Organization/619848"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:3000/api/Condition/Encounter/97939533",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "97939533",
+        "extension": [
+          {
+            "url": "http://localhost:3000/dstu2/StructureDefinition/encounter-guarantor",
+            "extension": [
+              {
+                "url": "party",
+                "valueReference": {
+                  "reference": "Patient/12724071",
+                  "display": "SMART, VALERIE"
+                }
+              },
+              {
+                "url": "period",
+                "valuePeriod": {
+                  "start": "2019-12-26T16:15:33.000Z"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "text": "FIN NBR"
+            },
+            "system": "urn:oid:5.5.5.5.5.5.",
+            "value": "15956",
+            "period": {
+              "start": "2019-12-26T16:15:33.000Z"
+            }
+          }
+        ],
+        "status": "finished",
+        "class": "inpatient",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0004",
+                "code": "I",
+                "display": "Inpatient",
+                "userSelected": false
+              }
+            ],
+            "text": "Inpatient"
+          }
+        ],
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/encounter-priority",
+              "code": "no-urg",
+              "display": "Non-urgent",
+              "userSelected": false
+            }
+          ],
+          "text": "Elective"
+        },
+        "patient": {
+          "reference": "Patient/12724071",
+          "display": "SMART, VALERIE"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "ATND",
+                    "display": "attender",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Attending Physician"
+              }
+            ],
+            "period": {
+              "start": "2019-12-26T16:15:33.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-10-02T19:06:34.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-09-28T22:24:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-09-17T10:47:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-09-15T19:20:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-08-24T19:24:00.000Z",
+              "end": "2020-08-24T20:01:01.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "CON",
+                    "display": "consultant",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Consulting Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-06-16T16:42:00.000Z",
+              "end": "2020-06-16T17:01:34.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "SPRF",
+                    "display": "secondary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Registered Nurse"
+              }
+            ],
+            "period": {
+              "start": "2020-09-28T15:40:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "SPRF",
+                    "display": "secondary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Registered Nurse"
+              }
+            ],
+            "period": {
+              "start": "2020-01-29T20:17:10.000Z",
+              "end": "2020-01-30T13:01:21.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "SPRF",
+                    "display": "secondary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Registered Nurse"
+              }
+            ],
+            "period": {
+              "start": "2020-01-28T19:40:00.000Z",
+              "end": "2020-01-29T12:01:33.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "SPRF",
+                    "display": "secondary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Registered Nurse"
+              }
+            ],
+            "period": {
+              "start": "2019-12-26T20:42:00.000Z",
+              "end": "2020-01-02T14:10:39.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "REF",
+                    "display": "referrer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Referring Physician"
+              }
+            ],
+            "period": {
+              "start": "2019-12-26T16:15:33.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "SPRF",
+                    "display": "secondary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oncology RN"
+              }
+            ],
+            "period": {
+              "start": "2020-10-05T13:17:36.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PPRF",
+                    "display": "primary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Covering Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-09-16T17:20:00.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-08-18T19:05:15.000Z",
+              "end": "2020-08-19T08:01:43.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-05-18T20:47:00.000Z",
+              "end": "2020-05-19T09:01:58.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PART",
+                    "display": "Participation",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Database Coordinator"
+              }
+            ],
+            "period": {
+              "start": "2020-01-29T23:17:35.000Z",
+              "end": "2020-01-30T12:01:34.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ParticipationType",
+                    "code": "PPRF",
+                    "display": "primary performer",
+                    "userSelected": false
+                  }
+                ],
+                "text": "ED Physician"
+              }
+            ],
+            "period": {
+              "start": "2020-01-07T19:16:03.000Z",
+              "end": "2020-01-17T06:01:53.000Z"
+            },
+            "individual": {
+              "reference": "Practitioner/987654321",
+              "display": "JUXLY, JUXLY"
+            }
+          }
+        ],
+        "period": {
+          "start": "2019-12-26T16:13:10.000Z",
+          "end": "2020-01-07T06:00:00.000Z"
+        },
+        "reason": [
+          {
+            "text": "Illness"
+          }
+        ],
+        "hospitalization": {
+          "admitSource": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/admit-source",
+                "code": "other",
+                "display": "Other",
+                "userSelected": false
+              }
+            ],
+            "text": "Information Not Available"
+          }
+        },
+        "serviceProvider": {
+          "reference": "Organization/619848"
+        }
+      }
+    }
+  ]
+}

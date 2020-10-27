@@ -1,0 +1,154 @@
+[
+  {
+    "resourceType": "Patient",
+    "id": "9111479715",
+    "extension": [
+      {
+        "url": "http://fhir.org/guides/argonaut/StructureDefinition/argo-race",
+        "extension": [
+          {
+            "url": "obmCategory",
+            "valueCoding": {
+              "system": "http://hl7.org/fhir/v3/Race",
+              "code": "2106-3",
+              "display": "White",
+              "userSelected": false
+            }
+          },
+          {
+            "url": "text",
+            "valueString": "White"
+          }
+        ]
+      },
+      {
+        "url": "http://fhir.org/guides/argonaut/StructureDefinition/argo-ethnicity",
+        "extension": [
+          {
+            "url": "obmCategory",
+            "valueCoding": {
+              "system": "http://hl7.org/fhir/v3/Ethnicity",
+              "code": "2186-5",
+              "display": "Not Hispanic or Latino",
+              "userSelected": false
+            }
+          },
+          {
+            "url": "text",
+            "valueString": "Not Hispanic or Latino"
+          }
+        ]
+      }
+    ],
+    "identefier": [
+      {
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:1.1.1.1.1.1",
+        "value": "9111479715",
+        "period": {
+          "start": "2018-06-20T19:26:20.848Z"
+        }
+      }
+    ],
+    "active": true,
+    "name": {
+      "use": "official",
+      "text": "Christiansen, Claire",
+      "family": ["Christiansen"],
+      "given": ["Claire"],
+      "period": {
+        "start": "2018-06-20T19:26:20.848Z"
+      }
+    },
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "1172313249",
+        "use": "home",
+        "period": {
+          "start": "2018-06-20T19:26:20.848Z"
+        }
+      },
+      {
+        "system": "phone",
+        "value": "5577763359",
+        "use": "mobile",
+        "period": {
+          "start": "2018-06-20T19:26:20.848Z"
+        }
+      },
+      {
+        "system": "phone",
+        "value": "6517400883",
+        "use": "work",
+        "period": {
+          "start": "2018-06-20T19:26:20.849Z"
+        }
+      },
+      {
+        "system": "email",
+        "value": "Christiansen.Claire9@hotmail.com",
+        "period": {
+          "start": "2018-06-20T19:26:20.849Z"
+        }
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1951-01-10",
+    "address": {
+      "use": "home",
+      "text": "6595 Eino Ridges/nErnestinastad, KY 69282/nUSA",
+      "line": ["6595 Eino Ridges"],
+      "city": "Ernestinastad",
+      "district": "",
+      "state": "KY",
+      "postalCode": "69282",
+      "country": "USA",
+      "period": {
+        "start": "2018-06-20T19:26:20.850Z"
+      }
+    },
+    "maritalStatus": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/v3/MaritalStatus",
+          "code": "S",
+          "display": "Never Married",
+          "userSelected": false
+        }
+      ],
+      "text": "Never Married"
+    },
+    "communication": {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "en",
+            "display": "English",
+            "userSelected": false
+          }
+        ],
+        "text": "English"
+      },
+      "preferred": true
+    },
+    "careProvider": [
+      {
+        "reference": "Practitioner/123456789",
+        "display": "Fisher, Burton"
+      }
+    ]
+  }
+]

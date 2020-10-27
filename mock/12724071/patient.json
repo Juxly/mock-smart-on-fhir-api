@@ -1,0 +1,249 @@
+{
+  "resourceType": "Patient",
+  "id": "12724071",
+  "extension": [
+    {
+      "url": "http://fhir.org/guides/argonaut/StructureDefinition/argo-race",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/v3/Race",
+            "code": "2106-3",
+            "display": "White",
+            "userSelected": false
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/argonaut/StructureDefinition/argo-ethnicity",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/v3/Ethnicity",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino",
+            "userSelected": false
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Not Hispanic, Latino, or Spanish Origin"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR",
+            "display": "Medical record number",
+            "userSelected": false
+          }
+        ],
+        "text": "MRN"
+      },
+      "system": "urn:oid:2.16.840.1.113883.6.1000",
+      "value": "6935",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+            "valueString": "00000006935"
+          }
+        ]
+      },
+      "period": {
+        "start": "2019-12-26T15:20:12.000Z"
+      }
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "Military Id"
+      },
+      "system": "urn:oid:2.16.840.1.113883.3.42.10001.100001.12",
+      "value": "10050007020",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+            "valueString": "10050007020"
+          }
+        ]
+      }
+    },
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "U",
+            "display": "Unspecified identifier",
+            "userSelected": false
+          }
+        ],
+        "text": "Messaging"
+      },
+      "system": "urn:oid:2.16.840.1.113883.3.13.8",
+      "value": "E871B6ED0CE40359751BFED848EA021",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+            "valueString": "E871B6ED0CE40359751BFED848EA021"
+          }
+        ]
+      },
+      "period": {
+        "start": "2020-07-09T14:28:57.000Z"
+      }
+    },
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "AN",
+            "display": "Account number",
+            "userSelected": false
+          }
+        ],
+        "text": "Federated Person Principal"
+      },
+      "system": "urn:oid:2.16.840.1.113883.3.13.6",
+      "value": "URN:juxly:IDENTITY-FEDERATION:REALM:EC2458F2-1E24-41C8-B71B-0E701AF7583D-CH:PRINCIPAL:ZY7XN2892CN6UV6Y",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+            "valueString": "URN:juxly:IDENTITY-FEDERATION:REALM:EC2458F2-1E24-41C8-B71B-0E701AF7583D-CH:PRINCIPAL:ZY7XN2892CN6UV6Y"
+          }
+        ]
+      },
+      "period": {
+        "start": "2020-08-10T17:06:31.000Z"
+      }
+    },
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "AN",
+            "display": "Account number",
+            "userSelected": false
+          }
+        ],
+        "text": "Federated Person Principal"
+      },
+      "system": "urn:oid:2.16.840.1.113883.3.13.6",
+      "value": "URN:juxly:IDENTITY-FEDERATION:REALM:E8A84236-C258-4952-98B7-A6FF8A9C587A-CH:PRINCIPAL:ZY7XN2892CN6UV6Y",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+            "valueString": "URN:juxly:IDENTITY-FEDERATION:REALM:E8A84236-C258-4952-98B7-A6FF8A9C587A-CH:PRINCIPAL:ZY7XN2892CN6UV6Y"
+          }
+        ]
+      },
+      "period": {
+        "start": "2020-07-09T14:28:55.000Z"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "text": "SMART, VALERIE",
+      "family": ["SMART"],
+      "given": ["VALERIE"],
+      "period": {
+        "start": "2019-12-26T15:20:13.000Z"
+      }
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "8168888886",
+      "use": "home",
+      "period": {
+        "start": "2019-12-26T15:20:12.000Z"
+      }
+    },
+    {
+      "system": "email",
+      "value": "valeriesmart@yopmail.com",
+      "use": "home",
+      "period": {
+        "start": "2020-04-02T14:08:50.000Z"
+      }
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1984-04-15",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "use": "home",
+      "text": "12345\nMain St\nJackson, MO 64116\nUS",
+      "line": ["12345", "Main St"],
+      "city": "Jackson",
+      "district": "Jackson",
+      "state": "MO",
+      "postalCode": "64116",
+      "country": "US",
+      "period": {
+        "start": "2019-12-26T15:19:41.000Z"
+      }
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/MaritalStatus",
+        "code": "M",
+        "display": "Married",
+        "userSelected": false
+      }
+    ],
+    "text": "Married"
+  },
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "en",
+            "display": "English",
+            "userSelected": false
+          }
+        ],
+        "text": "English"
+      },
+      "preferred": true
+    }
+  ],
+  "careProvider": [
+    {
+      "reference": "Practitioner/123456789",
+      "display": "Fisher, Burton"
+    }
+  ]
+}
