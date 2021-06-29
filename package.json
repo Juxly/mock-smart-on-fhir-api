@@ -23,7 +23,7 @@
     "install": "^0.10.1",
     "jade": "~1.11.0",
     "jsonwebtoken": "^7.4.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "mongoose": "^5.7.5",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.4",
